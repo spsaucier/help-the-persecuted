@@ -1,0 +1,49 @@
+// Newsletter Forms
+.footer-widgets,
+.newsletter-brown {
+  padding: 50px 20px;
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  #mc_embed_signup_scroll {
+    display: flex;
+
+    @media (max-width: 599px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      .mc-field-group {
+        width: 100%;
+        margin-bottom: 0.4em;
+        margin-right: 0;
+      }
+    }
+
+    & > *:not(.clear) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.newsletter-brown {
+  background: $htp_light_brown;
+
+  input[type=submit] {
+    @extend .is-brown;
+  }
+}
+
+.footer-widgets {
+  background: $htp_green;
+
+  input[type=submit] {
+    @extend .is-yellow;
+  }
+}

@@ -1,0 +1,38 @@
+.footer {
+  background: $htp_dark_green;
+  padding: 2.5rem 1.5rem 1.2rem;
+
+  .is-small {
+    font-size: 13px;
+    border-top: 1px solid;
+  }
+
+  .has-text-white {
+    color: $htp_dark_white !important;
+
+    a {
+      &:hover {
+        color: $white !important;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.social-icons {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  a {
+    font-size: 21px;
+    margin: 0 8px;
+  }
+}
+
+footer {
+  @media (max-width: 767px) {
+    .is-block-mobile {
+      display: block;
+    }
+  }
+}

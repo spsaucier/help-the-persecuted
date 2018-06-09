@@ -1,0 +1,34 @@
+.prayernetwork-container {
+  padding: 80px 20px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.prayernetwork-join {
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw 20px;
+
+  .inner {
+    max-width: 200px;
+
+    input {
+      width: 100%;
+    }
+
+    .mc-field-group {
+      margin-bottom: 0.4em;
+    }
+  }
+}
+
+.img-praybox {
+  background-image: url(../images/pray-box.jpg);
+
+  @media (max-width: 767px) {
+    min-height: 60vw;
+  }
+}

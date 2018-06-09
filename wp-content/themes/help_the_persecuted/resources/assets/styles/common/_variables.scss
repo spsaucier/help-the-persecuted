@@ -1,0 +1,28 @@
+/** Colors */
+$htp_light_brown: #c6b299;
+$htp_brown: #a57c51;
+$htp_yellow: #deb540;
+$htp_light_green: #666b49;
+$htp_green: #324a46;
+$htp_dark_green: #263835;
+$htp_red: #aa2b2b;
+$htp_teal: #44b2a5;
+$htp_light_gray: #d8d8d8;
+$htp_dark_white: #d8d8d8;
+$htp_black: #222223;
+
+/** Theme Specific */
+$primary: $htp_red;
+$text: $htp_black;
+$admin_bar_height: 32px;
+$header_height: 84px;
+$mobile_header_height: 64px;
+
+/** Box Model  */
+$spacer:                2rem;
+
+$heading_caps_font: 'Bebas Neue', Impact, 'Roboto', sans-serif;
+$heading_slab_font: 'Roboto Slab', 'Roboto', sans-serif;
+$main_font: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+$family-primary: $main_font;
+

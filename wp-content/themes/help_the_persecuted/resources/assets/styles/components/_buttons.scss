@@ -1,0 +1,46 @@
+.button {
+  font-weight: bold;
+  padding-left: 1.65em;
+  padding-right: 1.65em;
+}
+
+input[type=button],
+button {
+  @extend .button;
+}
+
+.is-yellow {
+  background: $htp_yellow;
+  border-color: $htp_yellow;
+  color: $htp_black;
+}
+
+.is-light-brown {
+  background: $htp_light_brown;
+  border-color: $htp_light_brown;
+  color: $htp_dark_green;
+}
+
+.is-brown {
+  background: $htp_brown;
+  border-color: $htp_brown;
+  color: $white;
+}
+
+.is-light-green {
+  background: $htp_light-green;
+  border-color: $htp_light-green;
+  color: $htp_black;
+}
+
+.is-green {
+  background: $htp_green;
+  border-color: $htp_green;
+  color: $white;
+}
+
+.is-dark-green {
+  background: $htp_dark_green;
+  border-color: $htp_dark_green;
+  color: $white;
+}

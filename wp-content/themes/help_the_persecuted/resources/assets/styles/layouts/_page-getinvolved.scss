@@ -1,0 +1,97 @@
+.getinvolved {
+  padding: 100px 0;
+  background: #666 url('../images/get-involved-bg.jpg') no-repeat center center / cover;
+
+  .button {
+    background: none;
+    border-color: #fff;
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+
+    .inner {
+      padding: 1.3em;
+      display: flex;
+      flex-direction: column;
+      font-size: 0.9em;
+      width: 100%;
+
+      img {
+        height: 80px;
+        margin-top: 13px;
+      }
+
+      h3 {
+        margin: 0.5em 0 0.7em;
+        font-size: 2em;
+      }
+
+      p {
+        line-height: 1.3;
+      }
+
+      .mc-field-group {
+        margin-bottom: 1em;
+
+        &:first-child {
+          width: 48%;
+          float: left;
+          margin-right: 2%;
+        }
+
+        &:nth-child(2) {
+          width: 48%;
+          float: left;
+          margin-left: 2%;
+        }
+      }
+
+      .button {
+        i.fab {
+          position: absolute;
+          left: 12px;
+        }
+      }
+
+      & > *:last-child {
+        margin-top: auto;
+      }
+    }
+
+    &:nth-child(1) {
+      .inner {
+        background-color: $htp_yellow;
+      }
+    }
+
+    &:nth-child(2) {
+      .inner {
+        background-color: $htp_light_brown;
+      }
+    }
+
+    &:nth-child(3) {
+      .inner {
+        background-color: $htp_red;
+      }
+    }
+
+    &:nth-child(4) {
+      .inner {
+        background-color: $htp_dark_green;
+      }
+    }
+  }
+}
+
+.getinvolved-container {
+  padding: 80px 20px;
+  max-width: 640px;
+  margin: 0 auto;
+
+  a {
+    text-decoration: underline;
+  }
+}

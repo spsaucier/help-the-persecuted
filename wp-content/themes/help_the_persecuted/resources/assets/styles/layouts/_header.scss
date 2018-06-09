@@ -1,0 +1,66 @@
+// Header
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animated.slideDown {
+  animation-name: slideDown;
+}
+
+.animated.slideUp {
+  animation-name: slideUp;
+}
+
+.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  will-change: transform, opacity;
+}
+
+.header--fixed {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+header.banner {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px 0;
+  background: $white;
+
+  .columns {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  a.brand {
+    display: block;
+    background: url('/wp-content/themes/help_the_persecuted/dist/images/logo.svg') no-repeat top left / contain;
+    height: 60px;
+    width: 164px;
+    overflow: hidden;
+    text-indent: -100%;
+
+    @media (max-width: 767px) {
+      height: 40px;
+      width: 109px;
+    }
+  }
+}

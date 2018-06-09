@@ -1,0 +1,247 @@
+.ourimpact-content {
+  & > h2 {
+    max-width: 500px;
+    margin: 80px auto 10px;
+  }
+}
+
+.donut-container {
+  height: 220px;
+}
+
+.donut {
+  position: relative;
+
+  h2 {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    top: 50%;
+    margin-top: -0.65em;
+    font-size: 3.6em;
+    padding-left: 8px;
+
+    sup {
+      font-size: 52%;
+    }
+  }
+
+  svg {
+    transform: rotate(-90deg);
+  }
+
+  .circle_animation {
+    stroke-dasharray: 440; // this value is the pixel circumference of the circle
+    stroke-dashoffset: 440;
+  }
+}
+
+.stat-charts.columns {
+  margin-bottom: 20px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 5%;
+  }
+
+  .column {
+    .inner {
+      padding: 10%;
+
+      @media (max-width: 767px) {
+        padding: 5%;
+      }
+    }
+
+    &:first-child {
+      h2,
+      h6 {
+        color: $htp_yellow;
+      }
+
+      .circle_animation {
+        animation: donutOne 2s ease-out forwards;
+      }
+    }
+
+    &:nth-child(2) {
+      h2,
+      h6 {
+        color: $htp_brown;
+      }
+
+      .circle_animation {
+        animation: donutOne 2s ease-out forwards;
+      }
+    }
+
+    &:nth-child(3) {
+      h2,
+      h6 {
+        color: $htp_teal;
+      }
+
+      .circle_animation {
+        animation: donutThree 2s ease-out forwards;
+      }
+    }
+
+    &:nth-child(4) {
+      h2,
+      h6 {
+        color: $htp_red;
+      }
+
+      .circle_animation {
+        animation: donutFour 2s ease-out forwards;
+      }
+    }
+  }
+}
+
+@keyframes donutOne {
+  to {
+    stroke-dashoffset: 440 - 15 * 4.4;
+  }
+}
+
+@keyframes donutThree {
+  to {
+    stroke-dashoffset: 440 - 4 * 4.4;
+  }
+}
+
+@keyframes donutFour {
+  to {
+    stroke-dashoffset: 440 - 56 * 4.4;
+  }
+}
+
+.ourimpact-map {
+  background-image: url(../images/map.jpg);
+  padding: 12vh 7vw;
+  position: relative;
+
+  @media (max-width: 767px) {
+    &::before {
+      content: '';
+      background: rgba(255, 255, 255, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .ourimpact-content {
+    max-width: 500px;
+    margin-left: auto;
+    font-size: calc(20px + 0.2vw);
+    position: relative;
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    @media (min-width: 1100px) {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.ourimpact-container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.ourimpact-quote {
+  background-image: url(../images/coins.jpg);
+  padding: 10vh 20px;
+
+  .ourimpact-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.img-twowomen {
+  background-image: url(../images/two-women.jpg);
+}
+
+.ourimpact-stories {
+  .ourimpact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .video-image {
+    margin: 40px auto;
+  }
+}
+
+.story-highlight {
+  background: $htp_brown;
+  padding: 20px;
+  margin-bottom: 40px;
+
+  img {
+    object-fit: fill;
+
+    @media (max-width: 767px) {
+      min-height: 70vw;
+    }
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:last-child {
+      .inner {
+        padding: 10%;
+        font-size: 1.1em;
+
+        @media (max-width: 767px) {
+          padding: 10px 0;
+        }
+
+        h5 {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
+
+.story-grid {
+  margin-bottom: 40px;
+
+  .columns {
+    margin-bottom: 20px;
+
+    .column {
+      & > a {
+        display: block;
+      }
+    }
+  }
+
+  h6 {
+    margin-bottom: 0.3em;
+    font-size: 1.1em;
+  }
+
+  .arrow-link {
+    color: $text;
+  }
+}

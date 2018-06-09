@@ -1,0 +1,220 @@
+.howwework-team {
+  padding: 60px 0;
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:first-child {
+      padding: 30px;
+    }
+
+    &:last-child {
+      align-items: center;
+
+      @media (max-width: 767px) {
+        flex-direction: row;
+      }
+    }
+
+    @media (min-width: 768px) {
+      p {
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+.snapshots {
+  position: relative;
+
+  @media (max-width: 767px) {
+    margin-top: -5%;
+    padding-bottom: calc(300px + 26vw);
+    height: 0;
+    width: 390px;
+    max-width: 100%;
+    position: relative;
+    z-index: -1;
+  }
+
+  @media (min-width: 768px) {
+    height: 38vw;
+    width: 42vw;
+    margin-top: -5%;
+  }
+
+  .snapshot {
+    position: absolute;
+    top: 31%;
+    width: 49%;
+    border: 17px solid #f6f6f6;
+    box-shadow: 4px 4px 10px -1px rgba(0, 0, 0, 0.15);
+    transform: translateY(-37%) rotate(-7deg);
+    transition: 0.2s transform ease-in-out;
+
+    &:nth-child(2) {
+      transform: translateY(-45%) rotate(13deg) translateX(100%);
+    }
+
+    &:nth-child(3) {
+      transform: translateY(37%) translateX(40%) rotate(2deg);
+    }
+
+    img {
+      display: block;
+    }
+  }
+
+  &:hover {
+    .snapshot {
+      transform: translateY(-40%) translateX(-4%) rotate(-7deg);
+
+      &:nth-child(2) {
+        transform: translateY(-47%) rotate(13deg)  translateX(104%);
+      }
+
+      &:nth-child(3) {
+        transform: translateY(40%) translateX(42%) rotate(3deg);
+      }
+    }
+  }
+}
+
+.howwework-slider {
+  .flickity-button {
+    background: none;
+  }
+
+  .flickity-button-icon {
+    fill: $white;
+  }
+
+  .carousel-cell {
+    width: 100%;
+    padding: 60px 20px 100px;
+
+    @media (min-width: 600px) {
+      padding: 11vw 10vw 16vw;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 1.5em;
+
+      @media (min-width: 768px) {
+        margin-top: -1em;
+      }
+    }
+
+    .circle {
+      width: 48px;
+      font-weight: bold;
+      margin: 0 auto 20px;
+      height: 48px;
+      border-radius: 100%;
+      border: 1px solid;
+      text-align: center;
+      line-height: 44px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.slider-controls {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  margin-top: -68px;
+  position: relative;
+  padding: 0 10px;
+
+  button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: $heading_caps_font;
+
+    @media (max-width: 399px) {
+      padding: 10px 6px;
+    }
+
+    &:focus {
+      color: $htp_red;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.img-manpensive {
+  background-image: url(../images/man-pensive.jpg);
+}
+
+.howwework-container {
+  padding: 80px 20px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.howwework-squares {
+  background: #888;
+
+  .button {
+    background: none;
+    border-color: #fff;
+    width: 100%;
+  }
+
+  .column {
+    padding: calc(10px + 3%);
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(1) {
+      background-color: $htp_brown;
+    }
+
+    &:nth-child(2) {
+      background-color: $htp_yellow;
+    }
+
+    &:nth-child(3) {
+      background-color: $htp_green;
+    }
+
+    &:nth-child(4) {
+      background-color: $htp_dark_green;
+    }
+
+    &:nth-child(5) {
+      background-color: $htp_light_brown;
+    }
+
+    &:nth-child(6) {
+      background-color: $htp_red;
+    }
+
+    img {
+      height: 98px;
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-top: auto;
+    }
+  }
+}
+
+.img-tremendousimpact {
+  padding: 2% 20px 45%;
+  background: url('../images/church-faded.jpg') no-repeat center bottom / 100%;
+}

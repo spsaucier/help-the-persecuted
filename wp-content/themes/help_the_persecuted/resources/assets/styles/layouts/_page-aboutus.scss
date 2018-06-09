@@ -1,0 +1,32 @@
+.aboutus-container {
+  padding: 80px 20px;
+  max-width: 640px;
+  margin: 0 auto;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.img-team {
+  background-image: url(../images/about-us-box.jpg);
+
+  @media (max-width: 767px) {
+    min-height: 70vw;
+  }
+}
+
+.aboutus-message {
+  .column:first-child {
+    background: #f0f0f0;
+
+    .inner {
+      padding: 3vw 10%;
+    }
+  }
+}
+
+.img-alley {
+  background-image: url(../images/alley.jpg);
+  padding: 13vw 5vw;
+}

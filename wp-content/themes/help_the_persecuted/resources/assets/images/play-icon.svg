@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>C-Symbols/Play</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 Z M12,20.5189125 C16.7048655,20.5189125 20.5189125,16.7048655 20.5189125,12 C20.5189125,7.29513453 16.7048655,3.48108747 12,3.48108747 C7.29513453,3.48108747 3.48108747,7.29513453 3.48108747,12 C3.48108747,16.7048655 7.29513453,20.5189125 12,20.5189125 Z M16.6948027,11.9579971 C17.0131905,12.1579378 17.0161022,12.4802773 16.6948027,12.6820465 L9.88802579,16.9565557 C9.72970097,17.0559803 9.60135335,16.9852666 9.60135335,16.7993805 L9.60135335,7.84066303 C9.60135335,7.65443299 9.72808027,7.5830455 9.88802579,7.68348784 L16.6948027,11.9579971 Z" id="path-1"></path>
+    </defs>
+    <g id="C-Symbols/Play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Combined-Shape" fill="#000000" xlink:href="#path-1"></use>
+        <g id="C-Color/Black" mask="url(#mask-2)" fill="#222223">
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,99 @@
+.whythepersecuted-content {
+  max-width: 860px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.video-image.womantalking {
+  background-image: url(../images/woman-talking.jpg);
+}
+
+.columns.stats {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .column {
+    .inner {
+      padding: 9%;
+
+      img {
+        width: 65%;
+        margin: 2.5%;
+      }
+
+      h5 {
+        margin-bottom: 0;
+      }
+    }
+
+    &:first-child {
+      .inner {
+        background: $htp_light_green;
+      }
+    }
+
+    &:nth-child(2) {
+      .inner {
+        background: $htp_dark_green;
+      }
+    }
+
+    &:nth-child(3) {
+      .inner {
+        background: $htp_brown;
+      }
+    }
+  }
+}
+
+.img-mankid {
+  background-image: url(../images/why-persecuted-box.jpg);
+
+  @media (max-width: 767px) {
+    min-height: 70vw;
+  }
+}
+
+.whythepersecuted-slider {
+  .flickity-page-dots {
+    bottom: 25px;
+  }
+
+  .flickity-button {
+    background: none;
+  }
+
+  .flickity-button-icon {
+    fill: $white;
+  }
+
+  .carousel-cell {
+    padding: 10vw;
+
+    .textbox {
+      max-width: 690px;
+      margin: 0 auto 20px;
+      border: 1px solid;
+      padding: 40px;
+    }
+
+    .is-larger {
+      font-size: 1.1em;
+      margin: 30px 0 0;
+    }
+  }
+}
+
+.img-manreading {
+  background-image: url(../images/man-reading.jpg);
+  background-position: center 70%;
+}
+
+.img-mosque {
+  background-image: url(../images/mosque.jpg);
+  padding: 6vh 10vw 40vh;
+
+  .whythepersecuted-content {
+    max-width: 600px;
+  }
+}
