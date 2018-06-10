@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'compiled' => '/tmp',
+    'compiled' => '/tmp/sage-cache',
 
 
     /*
