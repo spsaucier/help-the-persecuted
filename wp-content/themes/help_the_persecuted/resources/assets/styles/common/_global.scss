@@ -58,7 +58,7 @@ span,
   margin: 0;
 }
 
-.page-header {
+.content .page-header {
   padding: 10vh 10vw 5vh;
 
   &.has-bg-img {
@@ -70,6 +70,11 @@ span,
 
   h1 {
     margin: 0;
+    font-weight: 600;
+
+    @media (min-width: 1000px) {
+      font-size: 4vw;
+    }
   }
 }
 
@@ -85,7 +90,7 @@ span,
 
 .main .section-title {
   font-size: 3.7vw;
-  background: #fafafa;
+  background: #f0f0f0;
   margin: 0 !important;
   padding: 4vw 3vw;
   text-align: center;

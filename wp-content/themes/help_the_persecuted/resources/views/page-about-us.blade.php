@@ -11,10 +11,7 @@
       <div class="columns">
         <div class="column">
           <div class="inner">
-            <h3>A Message From Our President</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
-            <h5>&mdash; Joshua Youssef</h5>
+            @php(the_content())
           </div>
         </div>
         <div class="column fill-bg img-team"></div>
@@ -22,20 +19,18 @@
     </section>
     <section>
       <div class="aboutus-container has-text-centered">
-        <h5>“This is an endorsement talking about HTP. Lorem ipsum dolor sit amet consectetur iderpiscing elit. Anandandum madagas.”</h5>
-        <p>&mdash; Endorser's Name</p>
+        <h5>{{ the_field('endorsement_text') }}</h5>
+        <p>{{ the_field('endorser') }}</p>
       </div>
     </section>
     <section class="fill-bg img-alley has-text-white">
       <div class="container has-text-centered">
         <h2>Board of Directors</h2>
-        <h5>Name Here</h5>
-        <h5>Name Here</h5>
-        <h5>Name Here</h5>
-        <h5>Name Here</h5>
-        <h5>Name Here</h5>
-        <h5>Name Here</h5>
-        <h5>Name Here</h5>
+        @if (have_rows('board_of_directors'))
+        	@while( have_rows('board_of_directors') ) @php(the_row()) 
+            <h5>{{ the_sub_field('director_name') }}</h5>
+	        @endwhile
+        @endif
       </div>
     </section>
   @endwhile

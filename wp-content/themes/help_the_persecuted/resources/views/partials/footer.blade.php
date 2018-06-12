@@ -11,32 +11,30 @@
     </div>
   @endif
   <div class="footer has-text-white">
-    <div class="container">
-      <div class="columns">
-        <div class="column has-text-centered">
-          <img src="@asset('images/logo_white.png')" width="53"></img>
-          <div class="social-icons">
-            <a class="has-text-white" href="//facebook.com"><i class="fab fa-facebook-f"></i></a>
-            <a class="has-text-white" href="//twitter.com"><i class="fab fa-twitter"></i></a>
-            <a class="has-text-white" href="//instagram.com"><i class="fab fa-instagram"></i></a>
-            <a class="has-text-white" href="//youtube.com"><i class="fab fa-youtube"></i></a>
-          </div>
+    <div class="columns">
+      <div class="column has-text-centered">
+        <img src="@asset('images/logo_white.png')" width="53"></img>
+        <div class="social-icons">
+          <a class="has-text-white" href="//facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a class="has-text-white" href="//twitter.com"><i class="fab fa-twitter"></i></a>
+          <a class="has-text-white" href="//instagram.com"><i class="fab fa-instagram"></i></a>
+          <a class="has-text-white" href="//youtube.com"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-      <div class="columns is-small">
-        <div class="column">
-          <span class="is-block-mobile has-text-centered-mobile">
-            <a class="has-text-white" href="/contact-us">Contact Us</a> &nbsp; | &nbsp; 
-            <a class="has-text-white" href="/about-us">About Us</a><span class="hide-mobile"> &nbsp; | &nbsp; </span>
-          </span>
-          <span class="is-block-mobile has-text-centered-mobile">
-            <a class="has-text-white" href="/privacy-policy">Privacy Policy</a> &nbsp; | &nbsp; 
-            <a class="has-text-white" href="/terms-and-conditions">Terms and Conditions</a>
-          </span>
-        </div>
-        <div class="column has-text-right">
-          <span class="is-block-mobile has-text-centered-mobile">&copy; {{ date("Y") }} Help The Persecuted. </span><span class="is-block-mobile has-text-centered-mobile">All Rights Reserved.</span>
-        </div>
+    </div>
+    <div class="columns is-small">
+      <div class="column">
+        <span class="is-block-mobile has-text-centered-mobile">
+          <a class="has-text-white" href="/contact-us">Contact Us</a> &nbsp; | &nbsp; 
+          <a class="has-text-white" href="/about-us">About Us</a><span class="hide-mobile"> &nbsp; | &nbsp; </span>
+        </span>
+        <span class="is-block-mobile has-text-centered-mobile">
+          <a class="has-text-white" href="/privacy-policy">Privacy Policy</a> &nbsp; | &nbsp; 
+          <a class="has-text-white" href="/terms-and-conditions">Terms and Conditions</a>
+        </span>
+      </div>
+      <div class="column has-text-right">
+        <span class="is-block-mobile has-text-centered-mobile">&copy; {{ date("Y") }} Help The Persecuted. </span><span class="is-block-mobile has-text-centered-mobile">All Rights Reserved.</span>
       </div>
     </div>
   </div>

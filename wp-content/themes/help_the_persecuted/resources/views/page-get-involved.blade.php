@@ -6,26 +6,26 @@
 
 @section('content')
   @while(have_posts()) @php(the_post())
-    <section class="getinvolved has-text-centered has-text-white">
-      <div class="getinvolved-container">
+    <section class="getinvolved has-text-centered">
+      <div class="getinvolved-container has-text-white">
         <h1>Get Involved</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        {{ the_field('get_involved_text') }}
       </div>
       <div class="container">
         <div class="columns">
           <div class="column is-one-quarter">
-            <div class="inner">
+            <div class="inner has-text-white">
               <img src="@asset('images/donate-icon.svg')" alt="">
               <h3>Donate</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+              {{ the_field('donate_text') }}
               <p><a href="/donate" class="button">Donate</a></p>
             </div>
           </div>
           <div class="column is-one-quarter">
-            <div class="inner">
+            <div class="inner has-text-white">
               <img src="@asset('images/pray-icon.svg')" alt="">
               <h3>Pray</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+              {{ the_field('pray_text') }}
               <p><a href="/prayer-network" class="button">Join The Prayer List</a></p>
             </div>
           </div>
@@ -33,7 +33,7 @@
             <div class="inner">
               <img src="@asset('images/stay-informed-icon.svg')" alt="">
               <h3>Stay Informed</h3>
-              <p>Copy note: Sign up for our newsletter and… why?</p>
+              {{ the_field('stay_informed_text') }}
               
           		<!-- Begin MailChimp Signup Form -->
           		<div id="mc_embed_signup">
@@ -65,10 +65,10 @@
             </div>
           </div>
           <div class="column is-one-quarter">
-            <div class="inner">
+            <div class="inner has-text-white">
               <img src="@asset('images/advocate-icon.svg')" alt="">
               <h3>Advocate</h3>
-              <p>Copy note: Spread the word about this issue. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+              {{ the_field('advocate_text') }}
               <div>
                 <p><a href="#" class="button"><i class="fab fa-twitter"></i> Twitter</a></p>
                 <p><a href="#" class="button"><i class="fab fa-facebook-f"></i> Facebook</a></p>
@@ -78,9 +78,9 @@
           </div>
         </div>
       </div>
-      <div class="getinvolved-container">
+      <div class="getinvolved-container has-text-white">
         <h5 class="is-uppercase">Other Ways to Give</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <a class="is-underlined" href="/ways-to-give">Ways To Give</a></p>
+        {{ the_field('other_ways_to_give_text') }}
       </div>
     </section>
   @endwhile

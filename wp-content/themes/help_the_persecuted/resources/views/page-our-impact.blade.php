@@ -9,7 +9,7 @@
   @include('partials.page-header')
     <section class="whythepersecuted-today has-text-centered container">
       <div class="ourimpact-content">
-        <h2>In the past 7 years we’ve helped tens of thousands of individuals</h2>
+        <h1>{{ the_field('stats_heading') }}</h1>
       </div>
       <div class="columns stat-charts">
         <div class="column">
@@ -76,59 +76,74 @@
     </section>
     <section class="ourimpact-map fill-bg">
       <div class="ourimpact-content">
-        <h5>Bringing Hope and Redemption to the Middle East and North Africa</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+        <h5>{{ the_field('map_heading') }}</h5>
+        {{ the_field('map_text') }}
       </div>
     </section>
     <section class="ourimpact-container has-text-centered">
-      <h3>Mass Movement of the Holy Spirit</h3>
-      <p>Copy Notes: Speak to hope and revival and what God is doing in spite of persecution. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+      <h3>{{ the_field('highlight_section_1_heading') }}</h3>
+      {{ the_field('highlight_section_1_text') }}
     </section>
     <section class="ourimpact-quote has-text-centered has-text-white fill-bg">
       <div class="ourimpact-content">
-        <h5>“Through my suffering, I have discovered the truth. Therefore, I thank God for ISIS and the pain they caused me that lead me to Christ.”</h5>
-        <p>&mdash; Saudi refugee</p>
+        <h5>{{ the_field('quote_text') }}</h5>
+        <p>{{ the_field('quote_attribution') }}</p>
       </div>
     </section>
     <section class="ourimpact-stories has-text-centered">
       <div class="ourimpact-content">
-        <h2>Stories from the Field</h2>
-        <p>Copy note: In spite of the horrific tragedies some Christians are facing. We are having a tremendous impact in the lives of many. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+        <h1>{{ the_field('stories_main_heading') }}</h1>
+        {{ the_field('stories_main_text') }}
       </div>
       <div class="container">
-        <a class="video-image js-modal-video img-twowomen" data-video-id="XJS_UYNq4No" href="#"></a>
+        <a class="video-image js-modal-video {{ the_field('video_image') ? '' : 'img-twowomen' }}" data-video-id="{{ the_field('youtube_video_id') }}" href="#" {{ the_field('video_image') ? 'style="background-url(' . the_field('video_image') . ');"'></a>
+        
         <div class="story-highlight has-text-white">
-          <!--TODO: below, no offset, numberposts 1 - if to be dynamic?-->
-          <div class="columns">
-            <div class="column"><img src="@asset('images/highlight-story.jpg')"></img></div>
-            <div class="column">
-              <div class="inner">
-                <h5>The Only Family I Have Left is the Church</h5>
-                <p>Copy note: Quote or callout from a featured story. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-                <p><a href="#" class="arrow-link">Read My Story</a></p>
+          <?php $post_object = get_field('highlight_story');
+          if( $post_object ): 
+          	// override $post
+          	$post = $post_object;
+          	setup_postdata( $post ); ?>
+            <div class="columns">
+              <div class="column">
+                <div class="fill-bg" style="background-image: url({!! has_post_thumbnail($post) ? wp_get_attachment_image_src( get_post_thumbnail_id( $post ), 'medium' )[0] : '//placehold.it/628x628' !!});"></div>
+              </div>
+              <div class="column">
+                <div class="inner">
+                  <h5>{{ get_the_excerpt($post) }}</h5>
+                  <p>{{ the_field('highlight_excerpt_text', $post) }}</p>
+                  <p><a href="{{ get_the_permalink($post) }}" class="arrow-link">Read {{ get_the_title($post) }}</a></p>
+                </div>
               </div>
             </div>
-          </div>
+            <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+          <?php endif; ?>
         </div>
       </div>
     </section>
     <section class="story-grid container">
       <div class="columns is-multiline is-flex">
-        <?php
-        	$args = array( 'numberposts' => '5', 'order' => 'desc', 'offset' => 1 );
-        	$recent_posts = wp_get_recent_posts( $args ); ?>
-        	@foreach ( $recent_posts as $recent )
+        <?php $post_objects = get_field('story_links'); ?>
+        @if( $post_objects )
+          @foreach( $post_objects as $post_object)
       		  <div class="column is-one-quarter is-half-mobile">
-              <a href="<?php get_permalink($recent['ID']) ?>">
-                <img src="{!! has_post_thumbnail($recent['ID']) ? wp_get_attachment_image_src( get_post_thumbnail_id( $recent['ID'] ), 'thumbnail' )[0] : '//placehold.it/360x360' !!}" alt="{{ $recent['post_title'] }}">
-                <h6>{{ get_the_excerpt($recent['ID']) }}</h6>
-                <span class="arrow-link">Read {{ get_the_title($recent['ID']) }}</span>
+              <a href="{{ get_permalink($post_object->ID) }}">
+                <img src="{!! has_post_thumbnail($post_object->ID) ? wp_get_attachment_image_src( get_post_thumbnail_id( $post_object->ID ), 'thumbnail' )[0] : '//placehold.it/360x360' !!}" alt="{{ $recent['post_title'] }}">
+                <h6>{{ get_the_excerpt($post_object->ID) }}</h6>
+                <span class="arrow-link">Read {{ get_the_title($post_object->ID) }}</span>
               </a>
             </div>
           @endforeach
-        	<?php wp_reset_query(); ?>
+        @endif
       </div>
       <p class="has-text-centered"><a href="/stories" class="button">View All</a></p>
     </section>
+    <section class="has-bg-gray has-text-centered">
+      <div class="ourimpact-content ourimpact-donate">
+        <h1>{{ the_field('call_to_donate_headline') }}</h1>
+        {{ the_field('call_to_donate_text') }}
+        <p><a href="/donate" class="button is-primary">Give Today</a></p>
+      </div>
+    </section> 
   @endwhile
 @endsection

@@ -16,10 +16,10 @@
           <div class="column is-one-third has-text-centered">
             <div class="inner is-bg-gray">
               <p><i class="fab fa-phone"></i></p>
-              <p><strong>(555) 555-5555</strong></p>
+              <p><strong>{{ the_field('phone_number') }}</strong></p>
         
               <p><i class="fab fa-envelope"></i></p>
-              <p><strong>P.O. Box 20303, <br>Atlanta, GA 30325</strong></p>
+              {{ the_field('address') }}
             </div>
           </div>
         </div>

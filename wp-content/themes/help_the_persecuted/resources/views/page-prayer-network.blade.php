@@ -7,8 +7,7 @@
 @section('content')
   @while(have_posts()) @php(the_post())
     <section class="prayernetwork-container has-text-centered">
-      <h1>Help us pray for the persecuted</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+      @php(the_content())
     </section>
     <section>
       <div class="columns has-text-centered">

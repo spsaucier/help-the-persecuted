@@ -15,8 +15,21 @@
   .inner {
     max-width: 200px;
 
+    @media (min-width: 1200px) {
+      max-width: 300px;
+      width: 300px;
+
+      h5 {
+        font-size: 2.4em;
+      }
+    }
+
     input {
       width: 100%;
+
+      &[type=submit] {
+        @extend .is-primary;
+      }
     }
 
     .mc-field-group {

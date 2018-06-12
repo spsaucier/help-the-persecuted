@@ -6,45 +6,36 @@
 
 @section('content')
   <section class="home-header fill-bg has-text-centered">
-    <h1 class="has-text-white">We are on a mission to help our brothers and sisters in Christ</h1>
-    <a class="js-modal-video" data-video-id="XJS_UYNq4No" href="#">
+    <h1 class="has-text-white">{{ the_field('header_text') }}</h1>
+    <a class="js-modal-video" data-video-id="{{ the_field('youtube_video_id') }}" href="#">
       <img width="60" src="@asset('images/play-icon-white.svg')">
     </a>
   </section>
   <section class="home-extinction has-text-centered">
     <div class="container">
-      <h3>Targeted For Extinction</h3>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-      quis nostrud.</p>
+      <h3>{{ the_field('section_2_heading') }}</h3>
+      {{ the_field('section_2_text') }}
       <p><a href="/donate" class="button is-primary">Donate</a></p>
       <div class="pale-boxes columns">
         <div class="column">
           <div class="pale-box">
             <img src="@asset('images/magnify-icon.svg')" alt="">
             <h4>Identify</h4>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-            magna.</p>
+            {{ the_field('box_1_text') }}
           </div>
         </div>
         <div class="column">
           <div class="pale-box">
             <img src="@asset('images/parachute-icon.svg')" alt="">
             <h4>Support</h4>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-            magna.</p>
+            {{ the_field('box_2_text') }}
           </div>
         </div>
         <div class="column">
           <div class="pale-box">
             <img src="@asset('images/heartshake-icon.svg')" alt="">
             <h4>Empower</h4>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-            magna.</p>
+            {{ the_field('box_3_text') }}
           </div>
         </div>
       </div>
@@ -98,7 +89,7 @@
     <div class="container has-text-centered home-millions">
       <div class="columns">
         <div class="column center-children">
-          <h3>For Millions, the Truth is an Extremely Dangerous Thing to Believe</h3>
+          <h3>{{ the_field('slider_side_text') }}</h3>
         </div>
         <div class="column">
           <div class="js-carousel home-carousel">
@@ -128,53 +119,45 @@
       </div>
     </div>
   </section>
-  <h3 class="section-title">
-    Following Christ Is Costly
-  </h3>
+  <h3 class="section-title">{{ the_field('sub-slider_headline') }}</h3>
   <section class="alternating-image-text">
     <div class="columns">
       <div class="column fill-bg img-desertpeople"></div>
       <div class="column center-children is-text-dark">
-        <h5>Targets of Genocide</h5>
+        <h5>{{ the_field('alternating_textimage_heading_1') }}</h5>
         <hr class="mini">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-        magna aliquam erat volutpat.</p>
+        {{ the_field('alternating_textimage_text_1') }}
         <p><a href="/why-the-persecuted" class="arrow-link">Why The Persecuted?</a></p>
       </div>
     </div>
     <div class="columns">
       <div class="column fill-bg img-womanchild"></div>
       <div class="column center-children has-text-centered">
-        <h5>“We lost everything because of isis… But the lord has sent kind people into our lives [to help us]. He will not forget us.”</h5>
-        <p><a href="#" class="arrow-link">Read Ghasif's Story</a></p>
+        <h5>{{ the_field('alternating_textimage_heading_2') }}</h5>
+        <p><a href="{{ the_field('alternating_textimage_link_url_2') }}" class="arrow-link">{{ the_field('alternating_textimage_link_text_2') }}</a></p>
       </div>
     </div>
     <div class="columns">
       <div class="column fill-bg img-refugees"></div>
       <div class="column center-children">
-        <h5>Addressing The Need</h5>
+        <h5>{{ the_field('alternating_textimage_heading_3') }}</h5>
         <hr class="mini">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-        magna aliquam erat volutpat.</p>
+        {{ the_field('alternating_textimage_text_3') }}
         <p><a href="/how-we-work" class="arrow-link">How We Work</a></p>
       </div>
     </div>
     <div class="columns">
       <div class="column fill-bg img-kids"></div>
       <div class="column center-children">
-        <h5>Touching Countless Souls</h5>
+        <h5>{{ the_field('alternating_textimage_heading_4') }}</h5>
         <hr class="mini">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-        magna aliquam erat volutpat.</p>
+        {{ the_field('alternating_textimage_text_4') }}
         <p><a href="/our-impact" class="arrow-link">Our Impact</a></p>
       </div>
     </div>
   </section>
   <section class="home-getinvolved has-text-centered">
-    <h1>Find out what you can do to help</h1>
+    <h1>{{ the_field('last_heading_text') }}</h1>
     <p><a href="/get-involved" class="button is-yellow">Get Involved</a></p>
   </section>
 @endsection

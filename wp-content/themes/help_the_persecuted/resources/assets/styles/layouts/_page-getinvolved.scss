@@ -62,19 +62,23 @@
 
     &:nth-child(1) {
       .inner {
-        background-color: $htp_yellow;
+        background-color: $htp_red;
       }
     }
 
     &:nth-child(2) {
       .inner {
-        background-color: $htp_light_brown;
+        background-color: $htp_brown;
       }
     }
 
     &:nth-child(3) {
       .inner {
-        background-color: $htp_red;
+        background-color: $htp_yellow;
+
+        .button {
+          border-color: inherit;
+        }
       }
     }
 
