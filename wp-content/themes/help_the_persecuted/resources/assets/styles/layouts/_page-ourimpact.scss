@@ -13,7 +13,7 @@
   padding: 12vh 7vw;
   position: relative;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     &::before {
       content: '';
       background: rgba(255, 255, 255, 0.6);
@@ -31,11 +31,11 @@
     font-size: calc(20px + 0.2vw);
     position: relative;
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       max-width: 100%;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       width: 50%;
     }
 
@@ -112,7 +112,7 @@
         padding: 10%;
         font-size: 1.1em;
 
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           padding: 10px 0;
         }
 

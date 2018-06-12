@@ -1,7 +1,7 @@
 .howwework-team {
   padding: 60px 0;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     padding: 0;
   }
 
@@ -17,12 +17,12 @@
     &:last-child {
       align-items: center;
 
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         flex-direction: row;
       }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       p {
         max-width: 400px;
       }
@@ -33,7 +33,7 @@
 .snapshots {
   position: relative;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     margin-top: -5%;
     padding-bottom: calc(300px + 26vw);
     height: 0;
@@ -43,7 +43,7 @@
     z-index: -1;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     height: 38vw;
     width: 42vw;
     margin-top: -5%;
@@ -107,7 +107,7 @@
       font-size: 3em;
       margin-bottom: 1.5em;
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         margin-top: -1em;
       }
     }

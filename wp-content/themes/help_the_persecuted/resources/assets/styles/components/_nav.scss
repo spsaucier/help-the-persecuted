@@ -8,32 +8,36 @@ header.banner {
     font-weight: bold;
 
     a {
+      position: relative;
       padding: 0.5rem 1.35rem;
+      color: $black;
       font-size: 15px;
 
-      &:not(:last-child) {
-        position: relative;
-        color: $black;
+      @media (max-width: 925px) {
+        padding: 0.4rem 0.55rem;
+        font-size: 14px;
+      }
+    }
 
+    &:not(:last-child) {
+      a::after {
+        position: absolute;
+        top: 100%;
+        left: 9%;
+        width: 82%;
+        height: 3px;
+        background: rgba(0, 0, 0, 0.07);
+        content: '';
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.3s;
+        transform: translateY(10px);
+      }
+
+      a:hover,
+      a:focus {
         &::after {
-          position: absolute;
-          top: 100%;
-          left: 9%;
-          width: 82%;
-          height: 3px;
-          background: rgba(0, 0, 0, 0.07);
-          content: '';
-          opacity: 0;
-          transition: opacity 0.3s, transform 0.3s;
-          transform: translateY(10px);
-        }
-
-        &:hover,
-        &:focus {
-          &::after {
-            opacity: 1;
-            transform: translateY(0);
-          }
+          opacity: 1;
+          transform: translateY(0);
         }
       }
     }
@@ -44,7 +48,7 @@ header.banner {
         background: $htp_red;
         color: $white;
 
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           display: none;
         }
 
@@ -61,6 +65,10 @@ header.banner {
     top: 18px;
     right: 65px;
   }
+}
+
+.menu-main-menu-container {
+  margin-top: 3px;
 }
 
 .mobile-nav-button {
@@ -107,7 +115,7 @@ header.banner {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mobile-nav-button {
     display: block;
   }

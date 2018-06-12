@@ -7,7 +7,7 @@
 body {
   padding-top: $header_height;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     padding-top: $mobile_header_height;
   }
 
@@ -32,13 +32,13 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .show-mobile {
     display: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hide-mobile {
     display: none;
   }
@@ -124,13 +124,13 @@ span,
     & > .column {
       padding: 7%;
 
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         &.fill-bg {
           padding: 0 0 50%;
         }
       }
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         font-size: 1.6vw;
       }
 
@@ -195,7 +195,7 @@ span,
       background: $htp_dark_green;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       &:nth-child(2n) {
         & > .column:first-child {
           order: 1;

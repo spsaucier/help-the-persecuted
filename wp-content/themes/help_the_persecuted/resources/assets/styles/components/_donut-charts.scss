@@ -33,7 +33,7 @@
 .stat-charts.columns {
   margin-bottom: 20px;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     margin-bottom: 5%;
   }
 
@@ -41,7 +41,7 @@
     .inner {
       padding: 10%;
 
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         padding: 5%;
       }
     }
