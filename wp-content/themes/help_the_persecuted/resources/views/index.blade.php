@@ -20,7 +20,8 @@
         </div>
       </section>
     @endif
+    
+    {!! get_the_posts_navigation() !!}
   </div>
 
-  {!! get_the_posts_navigation() !!}
 @endsection

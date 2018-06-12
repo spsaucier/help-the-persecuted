@@ -2,12 +2,15 @@
   margin: 0 auto 100px;
   max-width: 740px;
   padding: 20px 20px 0;
+}
 
+.container {
   .navigation {
     font-family: $heading_slab_font;
   }
 
-  .next-post {
+  .next-post,
+  .nav-next {
     float: right;
   }
 }
