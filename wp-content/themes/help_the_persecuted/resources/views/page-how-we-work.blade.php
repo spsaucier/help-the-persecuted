@@ -56,38 +56,38 @@
     <section class="howwework-squares">
       <div class="columns is-multiline has-text-centered">
         <div class="column is-one-third has-text-white">
-          <img src="@asset('images/medical-icon.svg')" alt="Medical" />
-          <h4>Medical</h4>
+          <p><img src="@asset('images/crisis-funds-icon.svg')" alt="Crisis Funds" /></p>
+          <h4>Crisis Funds</h4>
           {{ the_field('box_text_1') }}
           <p><a href="{{ the_field('box_link_url_1') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_1') }}</a></p>
         </div>
         <div class="column is-one-third has-text-white">
-          <img src="@asset('images/education-icon.svg')" alt="Education" />
-          <h4>Education</h4>
+          <p><img src="@asset('images/safe-housing-icon.svg')" alt="Safe Housing" /></p>
+          <h4>Safe Housing</h4>
           {{ the_field('box_text_2') }}
           <p><a href="{{ the_field('box_link_url_2') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_2') }}</a></p>
         </div>
         <div class="column is-one-third has-text-white">
-          <img src="@asset('images/crisis-funds-icon.svg')" alt="Crisis Funds" />
-          <h4>Crisis Funds</h4>
+          <p><img src="@asset('images/pastoral-trauma-icon.svg')" alt="Pastoral &amp; Trauma Care" /></p>
+          <h4>Pastoral &amp; Trauma Care</h4>
           {{ the_field('box_text_3') }}
           <p><a href="{{ the_field('box_link_url_3') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_3') }}</a></p>
         </div>
         <div class="column is-one-third has-text-white">
-          <img src="@asset('images/livelihood-icon.svg')" alt="Livelihood" />
-          <h4>Livelihood</h4>
+          <p><img src="@asset('images/medical-icon.svg')" alt="Medical" /></p>
+          <h4>Medical</h4>
           {{ the_field('box_text_4') }}
           <p><a href="{{ the_field('box_link_url_4') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_4') }}</a></p>
         </div>
         <div class="column is-one-third has-text-white">
-          <img src="@asset('images/safe-housing-icon.svg')" alt="Safe Housing" />
-          <h4>Safe Housing</h4>
+          <p><img src="@asset('images/education-icon.svg')" alt="Education" /></p>
+          <h4>Education</h4>
           {{ the_field('box_text_5') }}
           <p><a href="{{ the_field('box_link_url_5') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_5') }}</a></p>
         </div>
         <div class="column is-one-third has-text-white">
-          <img src="@asset('images/pastoral-trauma-icon.svg')" alt="Pastoral &amp; Trauma Care" />
-          <h4>Pastoral &amp; Trauma Care</h4>
+          <p><img src="@asset('images/livelihood-icon.svg')" alt="Livelihood" /></p>
+          <h4>Livelihood</h4>
           {{ the_field('box_text_6') }}
           <p><a href="{{ the_field('box_link_url_6') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_6') }}</a></p>
         </div>
