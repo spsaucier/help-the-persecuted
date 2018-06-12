@@ -15,7 +15,7 @@
         <div class="column">
           <div class="inner">
             <div class="donut">
-              <h2>15<sup>%</sup></h2>
+              <h2>16<sup>%</sup></h2>
               <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <title>Layer 1</title>
@@ -30,7 +30,7 @@
         <div class="column">
           <div class="inner">
             <div class="donut">
-              <h2>15<sup>%</sup></h2>
+              <h2>16<sup>%</sup></h2>
               <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <title>Layer 1</title>
@@ -45,7 +45,7 @@
         <div class="column">
           <div class="inner">
             <div class="donut">
-              <h2>4<sup>%</sup></h2>
+              <h2>8<sup>%</sup></h2>
               <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <title>Layer 1</title>

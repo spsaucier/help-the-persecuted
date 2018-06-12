@@ -59,15 +59,15 @@
     
     		<div class="mc-field-group">
     			<label for="mce-FNAME"></label>
-    			<input type="text" value="First Name" name="FNAME" class="required" id="mce-FNAME">
+    			<input type="text" placeholder="First Name" name="FNAME" class="required" id="mce-FNAME">
     		</div>
     		<div class="mc-field-group">
     			<label for="mce-LNAME"></label>
-    			<input type="text" value="Last Name" name="LNAME" class="required" id="mce-LNAME">
+    			<input type="text" placeholder="Last Name" name="LNAME" class="required" id="mce-LNAME">
     		</div>
     		<div class="mc-field-group">
     			<label for="mce-EMAIL"></label>
-    			<input type="email" value="Email Address" name="EMAIL" class="required email" id="mce-EMAIL">
+    			<input type="email" placeholder="Email Address" name="EMAIL" class="required email" id="mce-EMAIL">
     		</div>
     			<div id="mce-responses" class="clear">
     				<div class="response" id="mce-error-response" style="display:none"></div>
