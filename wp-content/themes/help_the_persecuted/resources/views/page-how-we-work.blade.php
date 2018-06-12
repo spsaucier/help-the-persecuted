@@ -96,7 +96,7 @@
     <section class="is-bg-teal has-text-white has-text-centered">
       <div class="howwework-container">
         <p><img src="@asset('images/cross-icon.svg')" /></p>
-        <h4>{{ the_field('cross_section_heading') }}</h4>
+        <!--<h4>{{ the_field('cross_section_heading') }}</h4>-->
         {{ the_field('cross_section_text') }}
       </div>
     </section>

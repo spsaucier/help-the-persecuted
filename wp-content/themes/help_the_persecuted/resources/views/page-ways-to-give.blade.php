@@ -7,7 +7,7 @@
 @section('content')
   @while(have_posts()) @php(the_post())
     @include('partials.page-header')
-    <section class="waystogive-container">
+    <section class="primary-container">
       @php(the_content())
     </section>
   @endwhile

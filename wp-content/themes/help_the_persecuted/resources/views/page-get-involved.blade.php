@@ -15,7 +15,7 @@
         <div class="columns">
           <div class="column is-one-quarter">
             <div class="inner has-text-white">
-              <img src="@asset('images/pray-icon.svg')" alt="">
+              <p><img src="@asset('images/pray-icon.svg')" alt=""></p>
               <h3>Pray</h3>
               {{ the_field('pray_text') }}
               <p><a href="/prayer-network" class="button">Join The Prayer Team</a></p>
@@ -23,7 +23,7 @@
           </div>
           <div class="column is-one-quarter">
             <div class="inner has-text-white">
-              <img src="@asset('images/donate-icon.svg')" alt="">
+              <p><img src="@asset('images/donate-icon.svg')" alt=""></p>
               <h3>Donate</h3>
               {{ the_field('donate_text') }}
               <p><a href="/donate" class="button">Donate</a></p>
@@ -31,7 +31,7 @@
           </div>
           <div class="column is-one-quarter">
             <div class="inner">
-              <img src="@asset('images/stay-informed-icon.svg')" alt="">
+              <p><img src="@asset('images/stay-informed-icon.svg')" alt=""></p>
               <h3>Stay Connected</h3>
               {{ the_field('stay_informed_text') }}
               
@@ -66,13 +66,13 @@
           </div>
           <div class="column is-one-quarter">
             <div class="inner has-text-white">
-              <img src="@asset('images/advocate-icon.svg')" alt="">
+              <p><img src="@asset('images/advocate-icon.svg')" alt=""></p>
               <h3>Spread the Word</h3>
               {{ the_field('advocate_text') }}
               <div>
                 <p><a href="#" class="button" data-open-share="twitter" data-open-share-url="https://htp.org"><i class="fab fa-twitter"></i> Twitter</a></p>
                 <p><a href="#" class="button" data-open-share="facebook" data-open-share-link="https://htp.org"><i class="fab fa-facebook-f"></i> Facebook</a></p>
-                <p><a href="mailto:?subject=Help%20The%20Persecuted&body=Check%20out%20Help%20the%20Persecuted%20%28https%3A//htp.org%29%20-%20they%20help%20persecuted%20Christians%20around%20the%20world." class="button"><i class="fab fa-envelope"></i> Email</a></i></a></p>
+                <p><a target="_blank" href="mailto:?subject=Help%20The%20Persecuted&body=Check%20out%20Help%20the%20Persecuted%20%28https%3A//htp.org%29%20-%20they%20help%20persecuted%20Christians%20around%20the%20world." class="button"><i class="fab fa-envelope"></i> Email</a></i></a></p>
               </div>
             </div>
           </div>

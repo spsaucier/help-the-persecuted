@@ -72,10 +72,16 @@ span,
     margin: 0;
     font-weight: 600;
 
-    @media (min-width: 1000px) {
+    @media (min-width: 1250px) {
       font-size: 4vw;
     }
   }
+}
+
+.primary-container {
+  max-width: 730px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
 }
 
 .fill-bg {
@@ -89,10 +95,10 @@ span,
 }
 
 .main .section-title {
-  font-size: 3.7vw;
   background: #f0f0f0;
   margin: 0 !important;
-  padding: 4vw 3vw;
+  font-size: 3.2vw;
+  padding: 6vw 4vw;
   text-align: center;
 }
 
