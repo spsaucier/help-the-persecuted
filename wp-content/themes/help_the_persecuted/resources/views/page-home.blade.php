@@ -49,9 +49,7 @@
     		</h3>
     	</div>
     	<div class="column is-narrow">
-    		<p>
-    			Lorem ipsum dolor sit amet<br> consecetur adipiscing elit
-    		</p>
+    		<p>Get our e-newsletter for inspiring stories, <br>prayer requests, and updates from the field.</p>
     	</div>
     	<div class="column is-narrow">
     		<!-- Begin MailChimp Signup Form -->
@@ -97,21 +95,21 @@
               <div class="cell-content">
                 <h1 class="has-text-white"><span>Every </span>6 Min</h1>
                 <hr class="mini is-white" />
-                <p class="has-text-white">a Christian is killed because of their faith</p>
+                <p class="has-text-white">a Christian is killed for following Jesus</p>
               </div>
             </div>
             <div class="carousel-cell">
               <div class="cell-content">
-                <h1 class="has-text-white">80%</h1>
+                <h1 class="has-text-white">58%</h1>
                 <hr class="mini is-white" />
-                <p class="has-text-white">of the 5 million Iraqi and Syrian refugees are Christians</p>
+                <p class="has-text-white">of the more than 7 million Iraqi and Syrian refugees are Christians</p>
               </div>
             </div>
             <div class="carousel-cell">
               <div class="cell-content">
                 <h1 class="has-text-white">25K</h1>
                 <hr class="mini is-white" />
-                <p class="has-text-white">Christians have received life-giving support from Help The Persecuted since 2011</p>
+                <p class="has-text-white">Christians have received life-giving support since 2011</p>
               </div>
             </div>
           </div>
