@@ -21,6 +21,7 @@
       </section>
     @endif
     
+    <hr class="is-gray">
     {!! get_the_posts_navigation() !!}
   </div>
 
