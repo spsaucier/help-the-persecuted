@@ -25,13 +25,13 @@
         <div class="column">
           <div class="inner">
             <img src="@asset('images/icon-six.png')" />
-            <h5>Every 6 minutes, a Christian is killed because of their faith</h5>
+            <h5>Every 6 minutes, a Christian is killed for following Jesus Christ</h5>
           </div>
         </div>
         <div class="column">
           <div class="inner">
             <img src="@asset('images/icon-80-percent.png')" />
-            <h5>80% of the 5 million Iraqi and Syrian refugees are Christians</h5>
+            <h5>58% of the more than 7 million Iraqi and Syrian refugees are Christians</h5>
           </div>
         </div>
       </div>

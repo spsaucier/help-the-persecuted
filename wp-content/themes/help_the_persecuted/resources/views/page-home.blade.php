@@ -49,7 +49,7 @@
     		</h3>
     	</div>
     	<div class="column is-narrow">
-    		<p>Get our e-newsletter for inspiring stories, <br>prayer requests, and updates from the field.</p>
+    		<p>Get our e-newsletter for inspiring stories, <br/>prayer requests, and updates from the field.</p>
     	</div>
     	<div class="column is-narrow">
     		<!-- Begin MailChimp Signup Form -->
