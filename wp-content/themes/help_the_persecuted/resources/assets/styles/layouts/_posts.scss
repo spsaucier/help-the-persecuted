@@ -4,19 +4,32 @@
   padding: 20px 20px 0;
 }
 
-.container {
-  .navigation {
-    font-family: $heading_slab_font;
-  }
+.navigation {
+  font-family: $heading_slab_font;
+}
 
-  .next-post,
-  .nav-next {
-    float: right;
-  }
+.next-post,
+.nav-prev {
+  float: right;
+}
+
+.prev-post,
+.nav-next {
+  float: left;
+}
+
+.navigation::after {
+  content: '';
+  clear: both;
+  display: block;
 }
 
 .posts-list {
   .story-grid {
     margin: 60px 0;
+  }
+
+  .navigation {
+    margin-bottom: 50px;
   }
 }
