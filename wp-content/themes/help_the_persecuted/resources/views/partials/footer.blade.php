@@ -15,10 +15,10 @@
       <div class="column has-text-centered">
         <img src="@asset('images/logo_white.png')" width="53"></img>
         <div class="social-icons">
-          <a class="has-text-white" href="//facebook.com"><i class="fab fa-facebook-f"></i></a>
-          <a class="has-text-white" href="//twitter.com"><i class="fab fa-twitter"></i></a>
+          <a class="has-text-white" href="https://www.facebook.com/helppersecuted/"><i class="fab fa-facebook-f"></i></a>
+          <a class="has-text-white" href="https://twitter.com/ltwhtp"><i class="fab fa-twitter"></i></a>
           <a class="has-text-white" href="//instagram.com"><i class="fab fa-instagram"></i></a>
-          <a class="has-text-white" href="//youtube.com"><i class="fab fa-youtube"></i></a>
+          <a class="has-text-white" href="https://www.youtube.com/channel/UCKblXi85l6XJtLOuBLC2TWg"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
     </div>
