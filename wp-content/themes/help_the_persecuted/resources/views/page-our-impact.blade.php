@@ -106,7 +106,7 @@
           	setup_postdata( $post ); ?>
             <div class="columns">
               <div class="column">
-                <div class="fill-bg" style="background-image: url({!! has_post_thumbnail($post) ? wp_get_attachment_image_src( get_post_thumbnail_id( $post ), 'medium' )[0] : '//placehold.it/628x628' !!});"></div>
+                <div class="fill-bg" style="background-image: url({!! has_post_thumbnail($post) ? wp_get_attachment_image_src( get_post_thumbnail_id( $post ), 'medium' )[0] : '/wp-content/themes/help_the_persecuted/resources/assets/images/placeholder.png' !!});"></div>
               </div>
               <div class="column">
                 <div class="inner">
@@ -128,7 +128,7 @@
           @foreach( $post_objects as $post_object)
       		  <div class="column is-one-quarter is-half-mobile">
               <a href="{{ get_permalink($post_object->ID) }}">
-                <img src="{!! has_post_thumbnail($post_object->ID) ? wp_get_attachment_image_src( get_post_thumbnail_id( $post_object->ID ), 'thumbnail' )[0] : '//placehold.it/360x360' !!}" alt="{{ $recent['post_title'] }}">
+                <img src="{!! has_post_thumbnail($post_object->ID) ? wp_get_attachment_image_src( get_post_thumbnail_id( $post_object->ID ), 'thumbnail' )[0] : '/wp-content/themes/help_the_persecuted/resources/assets/images/placeholder.png' !!}" alt="{{ $recent['post_title'] }}">
                 <h6>{{ get_the_excerpt($post_object->ID) }}</h6>
                 <span class="arrow-link">Read {{ get_the_title($post_object->ID) }}</span>
               </a>

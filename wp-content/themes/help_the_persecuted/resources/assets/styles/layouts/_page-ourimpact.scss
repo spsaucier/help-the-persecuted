@@ -1,7 +1,8 @@
 .ourimpact-content {
   & > h1 {
-    max-width: 730px;
+    max-width: 790px;
     margin: 80px auto 10px;
+    padding: 0 20px;
     font-size: 3.8em;
     font-weight: 600;
   }
@@ -62,11 +63,11 @@
   padding: 10vh 20px;
 
   .ourimpact-content {
-    max-width: 600px;
+    max-width: 620px;
     margin: 0 auto;
 
     @media (min-width: 1300px) {
-      max-width: 42vw;
+      max-width: 50vw;
       font-size: 1.2vw;
     }
   }
@@ -78,7 +79,7 @@
 
 .ourimpact-stories {
   .ourimpact-content {
-    max-width: 520px;
+    max-width: 540px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -158,6 +159,6 @@
 
 .ourimpact-donate {
   padding: 20px 20px 100px;
-  max-width: 530px;
+  max-width: 570px;
   margin: 0 auto;
 }

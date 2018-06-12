@@ -39,6 +39,7 @@
   "images/mosque.jpg": "images/mosque_86723c74.jpg",
   "images/parachute-icon.svg": "images/parachute-icon_6868b905.svg",
   "images/pastoral-trauma-icon.svg": "images/pastoral-trauma-icon_d5843a31.svg",
+  "images/placeholder.png": "images/placeholder_529cdf16.png",
   "images/play-icon-white.svg": "images/play-icon-white_b54f1b15.svg",
   "images/play-icon.svg": "images/play-icon_2bee9922.svg",
   "images/pray-box.jpg": "images/pray-box_5ff1216a.jpg",
@@ -65,7 +66,7 @@
   "vendor/fontawesome-webfont.ttf?v=4.7.0": "vendor/fontawesome-webfont_b06871f2.ttf",
   "vendor/fontawesome-webfont.woff2?v=4.7.0": "vendor/fontawesome-webfont_af7ae505.woff2",
   "vendor/fontawesome-webfont.woff?v=4.7.0": "vendor/fontawesome-webfont_fee66e71.woff",
-  "scripts/customizer.js": "scripts/customizer_fc8ae7ad.js",
-  "styles/main.css": "styles/main_fc8ae7ad.css",
-  "scripts/main.js": "scripts/main_fc8ae7ad.js"
+  "scripts/customizer.js": "scripts/customizer_f370302f.js",
+  "styles/main.css": "styles/main_f370302f.css",
+  "scripts/main.js": "scripts/main_f370302f.js"
 }

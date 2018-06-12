@@ -30,7 +30,7 @@
         </span>
         <span class="is-block-mobile has-text-centered-mobile">
           <a class="has-text-white" href="/privacy-policy">Privacy Policy</a> &nbsp; | &nbsp; 
-          <a class="has-text-white" href="/terms-and-conditions">Terms and Conditions</a>
+          <a class="has-text-white" href="/terms-conditions">Terms and Conditions</a>
         </span>
       </div>
       <div class="column has-text-right">

@@ -161,7 +161,7 @@ span,
       background-image: url(../images/link-arrow-white.svg);
     }
 
-    &.is-text-dark {
+    .is-text-dark {
       * {
         color: $text;
       }
@@ -172,6 +172,10 @@ span,
 
       .arrow-link {
         color: $text;
+
+        &::after {
+          background-image: url(../images/link-arrow.svg);
+        }
       }
     }
 
