@@ -17,21 +17,21 @@
       {{ the_field('section_2_text') }}
       <p><a href="/donate" class="button is-primary">Donate</a></p>
       <div class="pale-boxes columns">
-        <div class="column">
+        <div class="column is-flex">
           <div class="pale-box">
             <img src="@asset('images/magnify-icon.svg')" alt="">
             <h4>Identify</h4>
             {{ the_field('box_1_text') }}
           </div>
         </div>
-        <div class="column">
+        <div class="column is-flex">
           <div class="pale-box">
             <img src="@asset('images/parachute-icon.svg')" alt="">
             <h4>Support</h4>
             {{ the_field('box_2_text') }}
           </div>
         </div>
-        <div class="column">
+        <div class="column is-flex">
           <div class="pale-box">
             <img src="@asset('images/heartshake-icon.svg')" alt="">
             <h4>Empower</h4>
