@@ -12,7 +12,7 @@
         <h3>{{ the_field('headline_1') }}</h3>
         {{ the_field('text_1') }}
       </div>
-      <a class="video-image js-modal-video womantalking js-sr" data-video-id="XJS_UYNq4No" href="#"></a>
+      <a class="video-image js-modal-video womantalking" data-video-id="{{ the_field('youtube_video_id') }}" href="#"></a>
     </section>
     <section class="container has-text-white has-text-centered">
       <div class="columns stats">
