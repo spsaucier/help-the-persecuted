@@ -24,12 +24,6 @@ export default {
     headroom.init();
     
     setTimeout(function () {
-      window.sr = ScrollReveal();
-      window.sr.reveal('.js-sr');
-      window.sr.reveal('.js-sr-set-1', {}, 100);
-      window.sr.reveal('.js-sr-set-2', {}, 100);
-      window.sr.reveal('.js-sr-set-3', {}, 100);
-
       if (document.querySelector('.js-carousel')) {
         new Flickity( '.js-carousel', {
           wrapAround: true,
@@ -57,9 +51,15 @@ export default {
           document.getElementById("slider-control-" + index).focus();
         });
       }
-    }, 2000)
+    }, 1000)
     
     new ModalVideo('.js-modal-video');
+    
+    window.sr = ScrollReveal();
+    window.sr.reveal('.js-sr');
+    window.sr.reveal('.js-sr-set-1', {}, 100);
+    window.sr.reveal('.js-sr-set-2', {}, 100);
+    window.sr.reveal('.js-sr-set-3', {}, 100);
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
