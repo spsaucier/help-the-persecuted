@@ -28,6 +28,7 @@ export default {
         new Flickity( '.js-carousel', {
           wrapAround: true,
           cellAlign: "left",
+          adaptiveHeight: true,
         });
       }
       
@@ -35,6 +36,7 @@ export default {
         let flktyControlled = new Flickity( '.js-carousel-controlled', {
           cellAlign: "left",
           pageDots: false,
+          adaptiveHeight: true,
         });
         
         // Add control buttons

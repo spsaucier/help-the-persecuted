@@ -95,18 +95,22 @@ span,
 }
 
 .main .section-title {
-  background: #f0f0f0;
-  margin: 0 !important;
-  font-size: 3.2vw;
-  padding: 6vw 4vw;
+  background: $htp_dark_white;
   text-align: center;
+  font-size: 2.5vw;
   line-height: 1.35;
+  margin: 0 !important;
+  padding: 7vw 17vw;
 }
 
 .js-carousel {
   .carousel-cell {
     width: 100%; /* full width */
   }
+}
+
+.flickity-viewport {
+  transition: height 0.2s;
 }
 
 .content .flickity-page-dots {
