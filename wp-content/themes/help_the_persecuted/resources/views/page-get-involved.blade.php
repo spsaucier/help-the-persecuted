@@ -9,12 +9,12 @@
     <section class="getinvolved has-text-centered">
       <div class="getinvolved-container has-text-white">
         <h1>Get Involved</h2>
-        {{ the_field('get_involved_text') }}
+        <div>{{ the_field('get_involved_text') }}</div>
       </div>
       <div class="container">
         <div class="columns">
           <div class="column is-one-quarter">
-            <div class="inner has-text-white">
+            <div class="inner has-text-white js-sr-set-1">
               <p><img src="@asset('images/pray-icon.svg')" alt=""></p>
               <h3>Pray</h3>
               {{ the_field('pray_text') }}
@@ -22,7 +22,7 @@
             </div>
           </div>
           <div class="column is-one-quarter">
-            <div class="inner has-text-white">
+            <div class="inner has-text-white js-sr-set-1">
               <p><img src="@asset('images/donate-icon.svg')" alt=""></p>
               <h3>Donate</h3>
               {{ the_field('donate_text') }}
@@ -30,7 +30,7 @@
             </div>
           </div>
           <div class="column is-one-quarter">
-            <div class="inner">
+            <div class="inner js-sr-set-1">
               <p><img src="@asset('images/stay-informed-icon.svg')" alt=""></p>
               <h3>Stay Connected</h3>
               {{ the_field('stay_informed_text') }}
@@ -65,7 +65,7 @@
             </div>
           </div>
           <div class="column is-one-quarter">
-            <div class="inner has-text-white">
+            <div class="inner has-text-white js-sr-set-1">
               <p><img src="@asset('images/advocate-icon.svg')" alt=""></p>
               <h3>Spread the Word</h3>
               {{ the_field('advocate_text') }}
@@ -79,8 +79,8 @@
         </div>
       </div>
       <div class="getinvolved-container has-text-white">
-        <h5 class="is-uppercase">Other Ways to Give</h5>
-        {{ the_field('other_ways_to_give_text') }}
+        <h5 class="is-uppercase js-sr">Other Ways to Give</h5>
+        <div class="js-sr">{{ the_field('other_ways_to_give_text') }}</div>
       </div>
     </section>
     <script src='https://cdn.rawgit.com/OpenShare/openshare/master/dist/openshare.js'></script>

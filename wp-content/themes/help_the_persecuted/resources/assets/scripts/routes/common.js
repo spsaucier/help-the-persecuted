@@ -2,6 +2,7 @@ import * as Headroom from 'headroom.js/dist/headroom.js';
 import * as Flickity from 'flickity';
 import fizzyUIUtils from 'fizzy-ui-utils';
 import * as ModalVideo from 'modal-video';
+import * as ScrollReveal from 'scrollreveal';
 
 export default {
   init() {
@@ -23,6 +24,12 @@ export default {
     headroom.init();
     
     setTimeout(function () {
+      window.sr = ScrollReveal();
+      window.sr.reveal('.js-sr');
+      window.sr.reveal('.js-sr-set-1', {}, 100);
+      window.sr.reveal('.js-sr-set-2', {}, 100);
+      window.sr.reveal('.js-sr-set-3', {}, 100);
+
       if (document.querySelector('.js-carousel')) {
         new Flickity( '.js-carousel', {
           wrapAround: true,

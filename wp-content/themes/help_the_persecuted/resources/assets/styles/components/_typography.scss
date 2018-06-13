@@ -51,9 +51,11 @@ a:focus {
   background-image: url(../images/link-arrow-white.svg);
 }
 
-.content .has-text-white *:not(input),
-.content .has-text-white input[type=submit] {
-  color: $white;
+.content .has-text-white {
+  *:not(input),
+  input[type=submit] {
+    color: $white;
+  }
 }
 
 .content {
@@ -99,6 +101,10 @@ a:focus {
     font-size: 1em;
     font-weight: bold;
     line-height: 1.3;
+  }
+
+  p:last-child:first-child {
+    margin-bottom: 1em;
   }
 }
 

@@ -10,7 +10,7 @@
     <section class="aboutus-message">
       <div class="columns">
         <div class="column">
-          <div class="inner">
+          <div class="inner js-sr">
             @php(the_content())
           </div>
         </div>
@@ -19,16 +19,16 @@
     </section>
     <section>
       <div class="aboutus-container has-text-centered">
-        <h5>{{ the_field('endorsement_text') }}</h5>
-        <p>{{ the_field('endorser') }}</p>
+        <h5 class="js-sr">{{ the_field('endorsement_text') }}</h5>
+        <p class="js-sr">{{ the_field('endorser') }}</p>
       </div>
     </section>
     <section class="fill-bg img-alley has-text-white">
       <div class="container has-text-centered">
-        <h2>Board of Directors</h2>
+        <h2 class="js-sr-set-1">Board of Directors</h2>
         @if (have_rows('board_of_directors'))
         	@while( have_rows('board_of_directors') ) @php(the_row()) 
-            <h5>{{ the_sub_field('director_name') }}</h5>
+            <h5 class="js-sr-set-1">{{ the_sub_field('director_name') }}</h5>
 	        @endwhile
         @endif
       </div>

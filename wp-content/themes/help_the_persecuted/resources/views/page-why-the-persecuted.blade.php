@@ -12,24 +12,24 @@
         <h3>{{ the_field('headline_1') }}</h3>
         {{ the_field('text_1') }}
       </div>
-      <a class="video-image js-modal-video womantalking" data-video-id="XJS_UYNq4No" href="#"></a>
+      <a class="video-image js-modal-video womantalking js-sr" data-video-id="XJS_UYNq4No" href="#"></a>
     </section>
     <section class="container has-text-white has-text-centered">
       <div class="columns stats">
         <div class="column">
-          <div class="inner">
+          <div class="inner js-sr-set-1">
             <img src="@asset('images/icon-no-1.png')" />
             <h5>Christians are the #1 most persecuted people group on earth</h5>
           </div>
         </div>
         <div class="column">
-          <div class="inner">
+          <div class="inner js-sr-set-1">
             <img src="@asset('images/icon-six.png')" />
             <h5>Every 6 minutes, a Christian is killed for following Jesus Christ</h5>
           </div>
         </div>
         <div class="column">
-          <div class="inner">
+          <div class="inner js-sr-set-1">
             <img src="@asset('images/icon-80-percent.png')" />
             <h5>58% of the more than 7 million Iraqi and Syrian refugees are Christians</h5>
           </div>
@@ -55,7 +55,7 @@
     <section class="alternating-image-text alternate">
       <div class="columns">
         <div class="column fill-bg img-mankid"></div>
-        <div class="column center-children">
+        <div class="column center-children js-sr">
           <h5>{{ the_field('red_box_headline') }}</h5>
           <hr class="mini">
           {{ the_field('red_box_text') }}
@@ -65,9 +65,9 @@
     </section>
     <section class="fill-bg img-mosque has-text-centered">
       <div class="whythepersecuted-content">
-        <h1>{{ the_field('mosque_headline') }}</h1>
-        {{ the_field('mosque_text') }}
-        <p><a href="/donate" class="button is-primary">Give Today</a></p>
+        <h1 class="js-sr">{{ the_field('mosque_headline') }}</h1>
+        <div class="js-sr">{{ the_field('mosque_text') }}</div>
+        <p class="js-sr"><a href="/donate" class="button is-primary">Give Today</a></p>
       </div>
     </section>
   @endwhile

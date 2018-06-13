@@ -109,6 +109,7 @@
     "font-awesome": "~4.7",
     "headroom.js": "^0.9.4",
     "jquery": "^3.3.1",
-    "modal-video": "^2.4.1"
+    "modal-video": "^2.4.1",
+    "scrollreveal": "^3.4.0"
   }
 }

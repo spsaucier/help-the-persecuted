@@ -7,7 +7,7 @@
 @section('content')
   <section class="home-header fill-bg has-text-centered">
     <h1 class="has-text-white">{{ the_field('header_text') }}</h1>
-    <a class="js-modal-video" data-video-id="{{ the_field('youtube_video_id') }}" href="#">
+    <a class="js-modal-video js-sr" data-video-id="{{ the_field('youtube_video_id') }}" href="#">
       <img width="60" src="@asset('images/play-icon-white.svg')">
     </a>
   </section>
@@ -18,21 +18,21 @@
       <p><a href="/donate" class="button is-primary">Donate</a></p>
       <div class="pale-boxes columns">
         <div class="column is-flex">
-          <div class="pale-box">
+          <div class="pale-box js-sr-set-1">
             <img src="@asset('images/magnify-icon.svg')" alt="">
             <h4>Identify</h4>
             {{ the_field('box_1_text') }}
           </div>
         </div>
         <div class="column is-flex">
-          <div class="pale-box">
+          <div class="pale-box js-sr-set-1">
             <img src="@asset('images/parachute-icon.svg')" alt="">
             <h4>Support</h4>
             {{ the_field('box_2_text') }}
           </div>
         </div>
         <div class="column is-flex">
-          <div class="pale-box">
+          <div class="pale-box js-sr-set-1">
             <img src="@asset('images/heartshake-icon.svg')" alt="">
             <h4>Empower</h4>
             {{ the_field('box_3_text') }}
@@ -44,14 +44,14 @@
   <section class="newsletter-brown">
     <div class="columns is-centered is-multiline">
     	<div class="column is-narrow">
-    		<h3>
+    		<h3 class="js-sr-set-2">
     			Stay Informed
     		</h3>
     	</div>
-    	<div class="column is-narrow">
+    	<div class="column is-narrow js-sr-set-2">
     		<p>Get our e-newsletter for inspiring stories, <br/>prayer requests, and updates from the field.</p>
     	</div>
-    	<div class="column is-narrow">
+    	<div class="column is-narrow js-sr-set-2">
     		<!-- Begin MailChimp Signup Form -->
     		<div id="mc_embed_signup">
     		<form action="https://htp.us18.list-manage.com/subscribe/post?u=0a845938efd03f3fe32533187&amp;id=9f6f85e542" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -87,7 +87,7 @@
     <div class="container has-text-centered home-millions">
       <div class="columns">
         <div class="column center-children">
-          <h3>{{ the_field('slider_side_text') }}</h3>
+          <h3 class="js-sr">{{ the_field('slider_side_text') }}</h3>
         </div>
         <div class="column">
           <div class="js-carousel home-carousel">
@@ -121,7 +121,7 @@
   <section class="alternating-image-text">
     <div class="columns">
       <div class="column fill-bg img-desertpeople"></div>
-      <div class="column center-children is-text-dark">
+      <div class="column center-children is-text-dark js-sr">
         <h5>{{ the_field('alternating_textimage_heading_1') }}</h5>
         <hr class="mini">
         {{ the_field('alternating_textimage_text_1') }}
@@ -130,14 +130,14 @@
     </div>
     <div class="columns">
       <div class="column fill-bg img-womanchild"></div>
-      <div class="column center-children has-text-centered">
+      <div class="column center-children has-text-centered js-sr">
         <h5>{{ the_field('alternating_textimage_heading_2') }}</h5>
         <p><a href="{{ the_field('alternating_textimage_link_url_2') }}" class="arrow-link">{{ the_field('alternating_textimage_link_text_2') }}</a></p>
       </div>
     </div>
     <div class="columns">
       <div class="column fill-bg img-refugees"></div>
-      <div class="column center-children">
+      <div class="column center-children js-sr">
         <h5>{{ the_field('alternating_textimage_heading_3') }}</h5>
         <hr class="mini">
         {{ the_field('alternating_textimage_text_3') }}
@@ -146,7 +146,7 @@
     </div>
     <div class="columns">
       <div class="column fill-bg img-kids"></div>
-      <div class="column center-children">
+      <div class="column center-children js-sr">
         <h5>{{ the_field('alternating_textimage_heading_4') }}</h5>
         <hr class="mini">
         {{ the_field('alternating_textimage_text_4') }}
@@ -155,7 +155,7 @@
     </div>
   </section>
   <section class="home-getinvolved has-text-centered">
-    <h1>{{ the_field('last_heading_text') }}</h1>
-    <p><a href="/get-involved" class="button is-yellow">Get Involved</a></p>
+    <h1 class="js-sr">{{ the_field('last_heading_text') }}</h1>
+    <p class="js-sr"><a href="/get-involved" class="button is-yellow">Get Involved</a></p>
   </section>
 @endsection
