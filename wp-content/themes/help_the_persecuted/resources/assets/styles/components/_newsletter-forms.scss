@@ -3,13 +3,21 @@
 .newsletter-brown {
   padding: 50px 20px;
 
+  @media (max-width: 768px) {
+    .column {
+      padding-bottom: 0;
+    }
+  }
+
   h3 {
     font-size: 24px;
     margin-bottom: 0;
+    line-height: 36px;
   }
 
   p {
     font-size: 12px;
+    margin-bottom: 0 !important;
   }
 
   #mc_embed_signup_scroll {

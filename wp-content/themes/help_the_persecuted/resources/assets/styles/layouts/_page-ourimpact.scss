@@ -8,8 +8,15 @@
   }
 }
 
+.disclaimer {
+  width: 100%;
+  text-align: center;
+  bottom: 10px;
+}
+
 .ourimpact-map {
   background-image: url(../images/map.jpg);
+  background-position: 75% center;
   padding: 12vh 7vw;
   position: relative;
 

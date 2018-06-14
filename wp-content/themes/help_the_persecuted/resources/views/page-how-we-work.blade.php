@@ -22,22 +22,20 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="howweeork-slider-container fill-bg img-manpensive has-text-white">
+      <h1 class="is-absolute">Our Process</h1>
       <div class="js-carousel-controlled howwework-slider has-text-centered">
-        <div class="carousel-cell fill-bg img-manpensive has-text-white">
-          <h1>Our Process</h1>
+        <div class="carousel-cell">
           <h3 class="circle">1</h3>
           <h4>Identify</h4>
           <div>{{ the_field('slide:_identify_text') }}</div>
         </div>
-        <div class="carousel-cell fill-bg img-manpensive has-text-white">
-          <h1>Our Process</h1>
+        <div class="carousel-cell">
           <h3 class="circle">2</h3>
           <h4>Support</h4>
           <div>{{ the_field('slide:_support_text') }}</div>
         </div>
-        <div class="carousel-cell fill-bg img-manpensive has-text-white">
-          <h1>Our Process</h1>
+        <div class="carousel-cell">
           <h3 class="circle">3</h3>
           <h4>Empower</h4>
           <div>{{ the_field('slide:_empower_text') }}</div>
@@ -57,51 +55,51 @@
       <div class="columns is-multiline has-text-centered">
         <div class="column is-one-third has-text-white">
           <p><img src="@asset('images/crisis-funds-icon.svg')" alt="Crisis Funds" /></p>
-          <div class="js-sr-set-1">
+          <div class="js-sr">
             <h4>Crisis Funds</h4>
             <div>{{ the_field('box_text_1') }}</div>
           </div>
-          <p class="js-sr-set-1"><a href="{{ the_field('box_link_url_1') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_1') }}</a></p>
+          <p class="js-sr"><a href="{{ the_field('box_link_url_1') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_1') }}</a></p>
         </div>
-        <div class="column is-one-third has-text-white">
+        <div class="column is-one-third">
           <p><img src="@asset('images/safe-housing-icon.svg')" alt="Safe Housing" /></p>
-          <div class="js-sr-set-1">
+          <div class="js-sr">
             <h4>Safe Housing</h4>
             <div>{{ the_field('box_text_2') }}</div>
           </div>
-          <p class="js-sr-set-1"><a href="{{ the_field('box_link_url_2') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_2') }}</a></p>
+          <p class="js-sr"><a href="{{ the_field('box_link_url_2') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_2') }}</a></p>
         </div>
         <div class="column is-one-third has-text-white">
           <p><img src="@asset('images/pastoral-trauma-icon.svg')" alt="Pastoral &amp; Trauma Care" /></p>
-          <div class="js-sr-set-1">
+          <div class="js-sr">
             <h4>Pastoral &amp; Trauma Care</h4>
             <div>{{ the_field('box_text_3') }}</div>
           </div>
-          <p class="js-sr-set-1"><a href="{{ the_field('box_link_url_3') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_3') }}</a></p>
+          <p class="js-sr"><a href="{{ the_field('box_link_url_3') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_3') }}</a></p>
         </div>
         <div class="column is-one-third has-text-white">
           <p><img src="@asset('images/medical-icon.svg')" alt="Medical" /></p>
-          <div class="js-sr-set-1">
+          <div class="js-sr">
             <h4>Medical</h4>
             <div>{{ the_field('box_text_4') }}</div>
           </div>
-          <p class="js-sr-set-1"><a href="{{ the_field('box_link_url_4') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_4') }}</a></p>
+          <p class="js-sr"><a href="{{ the_field('box_link_url_4') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_4') }}</a></p>
         </div>
-        <div class="column is-one-third has-text-white">
+        <div class="column is-one-third">
           <p><img src="@asset('images/education-icon.svg')" alt="Education" /></p>
-          <div class="js-sr-set-1">
+          <div class="js-sr">
             <h4>Education</h4>
             <div>{{ the_field('box_text_5') }}</div>
           </div>
-          <p class="js-sr-set-1"><a href="{{ the_field('box_link_url_5') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_5') }}</a></p>
+          <p class="js-sr"><a href="{{ the_field('box_link_url_5') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_5') }}</a></p>
         </div>
         <div class="column is-one-third has-text-white">
           <p><img src="@asset('images/livelihood-icon.svg')" alt="Livelihood" /></p>
-          <div class="js-sr-set-1">
+          <div class="js-sr">
             <h4>Livelihood</h4>
             <div>{{ the_field('box_text_6') }}</div>
           </div>
-          <p class="js-sr-set-1"><a href="{{ the_field('box_link_url_6') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_6') }}</a></p>
+          <p class="js-sr"><a href="{{ the_field('box_link_url_6') }}" class="button is-outlined is-inverted">{{ the_field('box_link_text_6') }}</a></p>
         </div>
       </div>
     </section>
@@ -116,7 +114,7 @@
       <div class="howwework-container">
         <h2 class="js-sr">{{ the_field('highlight_section_2_heading') }}</h2>
         <div class="js-sr">{{ the_field('highlight_section_2_text') }}</div>
-        <p class="js-sr"><a href="/donate" class="button is-primary">Give Today</a></p>
+        <p class="js-sr"><a href="/donate" target="_blank" class="button is-primary">Give Today</a></p>
       </div>
     </section>
   @endwhile

@@ -15,18 +15,18 @@
         <div class="columns">
           <div class="column is-one-quarter">
             <div class="inner has-text-white js-sr-set-1">
-              <p><img src="@asset('images/pray-icon.svg')" alt=""></p>
-              <h3>Pray</h3>
-              {{ the_field('pray_text') }}
-              <p><a href="/prayer-network" class="button">Join The Prayer Team</a></p>
+              <p><img src="@asset('images/donate-icon.svg')" alt=""></p>
+              <h3>Donate</h3>
+              {{ the_field('donate_text') }}
+              <p><a href="/donate" target="_blank" class="button">Donate</a></p>
             </div>
           </div>
           <div class="column is-one-quarter">
             <div class="inner has-text-white js-sr-set-1">
-              <p><img src="@asset('images/donate-icon.svg')" alt=""></p>
-              <h3>Donate</h3>
-              {{ the_field('donate_text') }}
-              <p><a href="/donate" class="button">Donate</a></p>
+              <p><img src="@asset('images/pray-icon.svg')" alt=""></p>
+              <h3>Pray</h3>
+              {{ the_field('pray_text') }}
+              <p><a href="/prayer-network" class="button">Join The Prayer Team</a></p>
             </div>
           </div>
           <div class="column is-one-quarter">

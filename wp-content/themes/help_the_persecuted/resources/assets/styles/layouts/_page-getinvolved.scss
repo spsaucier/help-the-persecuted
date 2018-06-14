@@ -1,6 +1,7 @@
 .getinvolved {
   padding: 100px 0;
   background: #666 url('../images/get-involved-bg.jpg') no-repeat center center / cover;
+  background-attachment: fixed;
 
   .button {
     background: none;
@@ -17,6 +18,11 @@
       flex-direction: column;
       font-size: 0.9em;
       width: 100%;
+
+      @media (max-width: 768px) {
+        padding-top: 1.6em;
+        padding-bottom: 1.6em;
+      }
 
       img {
         height: 80px;
@@ -62,13 +68,13 @@
 
     &:nth-child(1) {
       .inner {
-        background-color: $htp_brown;
+        background-color: $htp_red;
       }
     }
 
     &:nth-child(2) {
       .inner {
-        background-color: $htp_red;
+        background-color: $htp_brown;
       }
     }
 
@@ -94,8 +100,4 @@
   padding: 80px 20px;
   max-width: 640px;
   margin: 0 auto;
-
-  a {
-    text-decoration: underline;
-  }
 }

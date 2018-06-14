@@ -73,6 +73,7 @@
           </div>
         </div>
       </div>
+      <div class="is-absolute disclaimer"><small>(Percentages based on records from fiscal years 2017 and 2018)</small></div>
     </section>
     <section class="ourimpact-map fill-bg">
       <div class="ourimpact-content">
@@ -142,7 +143,7 @@
       <div class="ourimpact-content ourimpact-donate">
         <h1 class="js-sr">{{ the_field('call_to_donate_headline') }}</h1>
         <div class="js-sr">{{ the_field('call_to_donate_text') }}</div>
-        <p class="js-sr"><a href="/donate" class="button is-primary">Give Today</a></p>
+        <p class="js-sr"><a href="/donate" target="_blank" class="button is-primary">Give Today</a></p>
       </div>
     </section> 
   @endwhile

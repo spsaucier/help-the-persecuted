@@ -53,7 +53,7 @@
 }
 
 .img-mankid {
-  background-image: url(../images/why-persecuted-box.jpg);
+  background-image: url(../images/why-the-persecuted-answering-gods-call.jpg);
 
   @media (max-width: 768px) {
     min-height: 70vw;
@@ -63,6 +63,10 @@
 .whythepersecuted-slider {
   .flickity-page-dots {
     bottom: 25px;
+
+    .dot {
+      background: $white;
+    }
   }
 
   .flickity-button {
@@ -87,6 +91,12 @@
       font-size: 1.1em;
       margin: 30px 0 0;
     }
+  }
+}
+
+@media (min-width: 769px) {
+  .alternating-image-text.alternate .columns > .column {
+    padding: 10% 7%;
   }
 }
 

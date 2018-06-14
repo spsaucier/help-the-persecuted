@@ -58,6 +58,10 @@
     transform: translateY(-37%) rotate(-7deg);
     transition: 0.2s transform ease-in-out;
 
+    @media (max-width: 768px) {
+      border-width: 2vw;
+    }
+
     &:nth-child(2) {
       transform: translateY(-45%) rotate(13deg) translateX(100%);
     }
@@ -86,6 +90,15 @@
   }
 }
 
+.howweeork-slider-container {
+  h1.is-absolute {
+    top: 11%;
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 .howwework-slider {
   .flickity-button {
     background: none;
@@ -103,19 +116,10 @@
       padding: 11vw 10vw 16vw;
     }
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 1.5em;
-
-      @media (min-width: 769px) {
-        margin-top: -1em;
-      }
-    }
-
     .circle {
       width: 48px;
       font-weight: bold;
-      margin: 0 auto 20px;
+      margin: 30px auto 20px;
       height: 48px;
       border-radius: 100%;
       border: 1px solid;
@@ -191,6 +195,10 @@
 
     &:nth-child(2) {
       background-color: $htp_yellow;
+
+      .button {
+        border-color: inherit;
+      }
     }
 
     &:nth-child(3) {
@@ -203,6 +211,10 @@
 
     &:nth-child(5) {
       background-color: $htp_light_brown;
+
+      .button {
+        border-color: inherit;
+      }
     }
 
     &:nth-child(6) {

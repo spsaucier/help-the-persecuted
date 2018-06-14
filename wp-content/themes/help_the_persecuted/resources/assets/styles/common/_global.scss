@@ -1,5 +1,5 @@
 @media (max-width: 600px) {
-  html {
+  html[lang="en-US"] {
     margin-top: 0 !important;
   }
 }
@@ -97,10 +97,15 @@ span,
 .main .section-title {
   background: $htp_dark_white;
   text-align: center;
-  font-size: 2.5vw;
   line-height: 1.35;
   margin: 0 !important;
-  padding: 7vw 17vw;
+  padding: 7vw 6vw;
+
+  @media (min-width: 769px) {
+    font-size: 2.5vw;
+    padding-left: 17vw;
+    padding-right: 17vw;
+  }
 }
 
 .js-carousel {
@@ -119,6 +124,10 @@ span,
 
 .is-bg-teal {
   background: $htp_teal;
+}
+
+.is-absolute {
+  position: absolute;
 }
 
 .alternating-image-text {

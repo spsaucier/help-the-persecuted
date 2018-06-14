@@ -30,7 +30,7 @@
         </div>
         <div class="column">
           <div class="inner js-sr-set-1">
-            <img src="@asset('images/icon-80-percent.png')" />
+            <img src="@asset('images/icon-58-percent.png')" />
             <h5>58% of the more than 7 million Iraqi and Syrian refugees are Christians</h5>
           </div>
         </div>
@@ -38,11 +38,9 @@
     </section>
     @if (have_rows('slider'))
       <section>
-        <div class="js-carousel whythepersecuted-slider has-text-centered">
-        	@while( have_rows('slider') ) @php(the_row()) 
-        		@php($image = get_sub_field('slide_background_image'))
-            <div class="carousel-cell fill-bg {{ !$image ? 'img-manreading' : '' }} has-text-white" {{ $image ? "style='background-image: url(" . $image['url'] . ")'" : '' }}
-              >
+        <div class="js-carousel whythepersecuted-slider has-text-centered fill-bg img-manreading">
+        	@while( have_rows('slider') ) @php(the_row())
+            <div class="carousel-cell has-text-white">
               <h1>{{ the_sub_field('slide_heading') }}</h1>
               <h5 class="textbox">{{ the_sub_field('slide_textbox') }}</h5>
               <p class="is-larger">{{ the_sub_field('slide_verse') }}</p>
@@ -67,7 +65,7 @@
       <div class="whythepersecuted-content">
         <h1 class="js-sr">{{ the_field('mosque_headline') }}</h1>
         <div class="js-sr">{{ the_field('mosque_text') }}</div>
-        <p class="js-sr"><a href="/donate" class="button is-primary">Give Today</a></p>
+        <p class="js-sr"><a href="/donate" target="_blank" class="button is-primary">Give Today</a></p>
       </div>
     </section>
   @endwhile

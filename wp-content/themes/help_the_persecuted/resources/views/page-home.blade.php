@@ -15,7 +15,7 @@
     <div class="container">
       <h3>{{ the_field('section_2_heading') }}</h3>
       {{ the_field('section_2_text') }}
-      <p><a href="/donate" class="button is-primary">Donate</a></p>
+      <p><a href="/donate" target="_blank" class="button is-primary">Donate</a></p>
       <div class="pale-boxes columns">
         <div class="column is-flex">
           <div class="pale-box js-sr-set-1">
@@ -45,7 +45,7 @@
     <div class="columns is-centered is-multiline">
     	<div class="column is-narrow">
     		<h3 class="js-sr-set-2">
-    			Stay Informed
+    			Be The First To Know
     		</h3>
     	</div>
     	<div class="column is-narrow js-sr-set-2">
