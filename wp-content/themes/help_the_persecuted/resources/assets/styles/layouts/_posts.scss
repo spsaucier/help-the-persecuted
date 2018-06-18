@@ -4,14 +4,18 @@
   padding: 20px 20px 0;
 }
 
-blockquote {
-  background: $htp_light_brown;
-  border: none;
+.content {
+  blockquote {
+    background: $htp_light_brown;
+    border: none;
+    padding: 5%;
 
-  p {
-    font-family: $heading_slab_font;
-    font-size: 1.8em;
-    text-align: center;
+    p {
+      font-family: $heading_slab_font;
+      font-size: 1.8em;
+      text-align: center;
+      color: $htp_dark_green;
+    }
   }
 }
 
