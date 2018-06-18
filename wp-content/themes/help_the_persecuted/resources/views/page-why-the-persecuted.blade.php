@@ -37,11 +37,11 @@
       </div>
     </section>
     @if (have_rows('slider'))
-      <section>
+      <section class="whythepersecuted-slider-container">
+        <h1 class="whythepersecuted-slider-heading has-text-centered has-text-white">What the Bible says</h1>
         <div class="js-carousel whythepersecuted-slider has-text-centered fill-bg img-manreading">
         	@while( have_rows('slider') ) @php(the_row())
             <div class="carousel-cell has-text-white">
-              <h1>{{ the_sub_field('slide_heading') }}</h1>
               <h5 class="textbox">{{ the_sub_field('slide_textbox') }}</h5>
               <p class="is-larger">{{ the_sub_field('slide_verse') }}</p>
               <p><small>{{ the_sub_field('slide_verse_reference') }}</small></p>

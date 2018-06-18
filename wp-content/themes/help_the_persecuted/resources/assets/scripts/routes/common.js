@@ -23,7 +23,7 @@ export default {
     // initialise
     headroom.init();
     
-    setTimeout(function () {
+    document.addEventListener("DOMContentLoaded", function() {
       if (document.querySelector('.js-carousel')) {
         new Flickity( '.js-carousel', {
           wrapAround: true,
@@ -53,7 +53,7 @@ export default {
           document.getElementById("slider-control-" + index).focus();
         });
       }
-    }, 1000)
+    });
     
     new ModalVideo('.js-modal-video');
     

@@ -60,6 +60,22 @@
   }
 }
 
+.whythepersecuted-slider-container {
+  position: relative;
+}
+
+.whythepersecuted-slider-heading {
+  position: absolute;
+  top: 6vw;
+  width: 100%;
+  z-index: 1;
+
+  @media (max-width: 500px) {
+    font-size: 2.5em;
+    top: 10vw;
+  }
+}
+
 .whythepersecuted-slider {
   .flickity-page-dots {
     bottom: 25px;
@@ -78,7 +94,11 @@
   }
 
   .carousel-cell {
-    padding: 10vw;
+    padding: 16vw 10vw 10vw;
+
+    @media (max-width: 500px) {
+      padding-top: 100px;
+    }
 
     .textbox {
       max-width: 690px;
