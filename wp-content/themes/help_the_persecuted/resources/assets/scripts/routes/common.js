@@ -7,7 +7,7 @@ import * as ScrollReveal from 'scrollreveal';
 export default {
   init() {
     // JavaScript to be fired on all pages
-    // const $ = window.jQuery;
+    const $ = window.jQuery;
     
     var myElement = document.querySelector("header.banner");
     // construct an instance of Headroom, passing the element
@@ -23,7 +23,7 @@ export default {
     // initialise
     headroom.init();
     
-    document.addEventListener("DOMContentLoaded", function() {
+    $(window).load(function() {
       if (document.querySelector('.js-carousel')) {
         new Flickity( '.js-carousel', {
           wrapAround: true,
