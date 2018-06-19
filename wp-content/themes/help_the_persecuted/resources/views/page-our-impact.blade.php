@@ -97,7 +97,14 @@
         <div class="js-sr">{{ the_field('stories_main_text') }}</div>
       </div>
       <div class="container">
-        <a class="video-image js-sr js-modal-video {{ the_field('video_image') ? '' : 'img-twowomen' }}" data-video-id="{{ the_field('youtube_video_id') }}" href="#" {{ the_field('video_image') ? 'style="background-url(' . the_field('video_image') . ');"'></a>
+        @php
+          if (get_field('video_image')) {
+            $video_style = 'style="background-image: url(' . get_field('video_image') . ');"';
+          } else {
+            $video_class = 'img-twowomen';
+          }
+        @endphp
+        <a class="video-image js-sr js-modal-video {{ $video_class }}" data-video-id="{{ the_field('youtube_video_id') }}" href="#" {!! $video_style !!}></a>
         
         <div class="story-highlight has-text-white">
           <?php $post_object = get_field('highlight_story');

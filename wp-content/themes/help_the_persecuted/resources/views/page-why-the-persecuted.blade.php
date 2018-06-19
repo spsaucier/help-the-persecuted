@@ -12,7 +12,14 @@
         <h3>{{ the_field('headline_1') }}</h3>
         {{ the_field('text_1') }}
       </div>
-      <a class="video-image js-modal-video womantalking" data-video-id="{{ the_field('youtube_video_id') }}" href="#"></a>
+      @php
+        if (get_field('video_image')) {
+          $video_style = 'style="background-image: url(' . get_field('video_image') . ');"';
+        } else {
+          $video_class = 'womantalking';
+        }
+      @endphp
+      <a class="video-image js-sr js-modal-video {{ $video_class }}" data-video-id="{{ the_field('youtube_video_id') }}" href="#" {!! $video_style !!}></a>
     </section>
     <section class="container has-text-white has-text-centered">
       <div class="columns stats">
