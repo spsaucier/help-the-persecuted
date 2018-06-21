@@ -34,7 +34,7 @@
         </span>
       </div>
       <div class="column has-text-right">
-        <span class="is-block-mobile has-text-centered-mobile">&copy; {{ date("Y") }} Help The Persecuted. </span><span class="is-block-mobile has-text-centered-mobile">All Rights Reserved.</span>
+        <span class="is-block-mobile has-text-centered-mobile">&copy; {{ date("Y") }} <em>Help The Persecuted</em>. </span><span class="is-block-mobile has-text-centered-mobile">All Rights Reserved.</span>
       </div>
     </div>
   </div>

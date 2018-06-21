@@ -24,6 +24,8 @@ export default {
     headroom.init();
     
     $(window).load(function() {
+      window.scrollTo(0,0);
+
       if (document.querySelector('.js-carousel')) {
         new Flickity( '.js-carousel', {
           wrapAround: true,
@@ -53,6 +55,18 @@ export default {
           document.getElementById("slider-control-" + index).focus();
         });
       }
+      
+      $('em').each(function() {
+        $(this).html($(this).html().replace(/(\sHelp\ The\ Persecuted+)/,' <span class="is-not-italic">Help The Persecuted</span>'));
+        $(this).html($(this).html().replace(/(Help\ The\ Persecuted\s+)/,'<em class="is-not-italic">Help The Persecuted</span> '));
+      });
+      
+      $('h1,h2,h3,li,p').each(function() {
+        $(this).html($(this).html().replace(/(\sHelp\ The\ Persecuted+)/,' <em>Help The Persecuted</em>'));
+        $(this).html($(this).html().replace(/(Help\ The\ Persecuted\s+)/,'<em>Help The Persecuted</em> '));
+        $(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
+        $(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
+      });
     });
     
     new ModalVideo('.js-modal-video');
