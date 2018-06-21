@@ -19,6 +19,16 @@
   }
 
   figure {
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 0 0 1em;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
     img {
       display: block;
     }
