@@ -20,8 +20,8 @@
 
   figure {
     @media (max-width: 768px) {
-      width: 100%;
-      margin: 0 0 1em;
+      width: 100% !important;
+      margin: 0 0 1em !important;
 
       img {
         width: 100%;
