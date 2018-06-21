@@ -42,7 +42,7 @@
     </div>
   </section>
   <section class="newsletter-brown">
-    <div class="columns is-centered is-multiline">
+    <div class="columns is-centered has-text-centered-mobile is-multiline">
     	<div class="column is-narrow">
     		<h3 class="js-sr-set-2">
     			Be the First To Know
