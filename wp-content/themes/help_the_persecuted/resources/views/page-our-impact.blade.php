@@ -120,7 +120,7 @@
                 <div class="inner">
                   <h5 class="js-sr">{{ get_the_excerpt($post) }}</h5>
                   <p class="js-sr">{{ the_field('highlight_excerpt_text', $post) }}</p>
-                  <p class="js-sr"><a href="{{ get_the_permalink($post) }}" class="arrow-link">Read {{ get_the_title($post) }}</a></p>
+                  <p class="js-sr"><a href="{{ get_the_permalink($post) }}" class="arrow-link">Read Story</a></p>
                 </div>
               </div>
             </div>
