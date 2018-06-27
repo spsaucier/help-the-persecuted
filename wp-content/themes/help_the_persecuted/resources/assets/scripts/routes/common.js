@@ -61,7 +61,7 @@ export default {
         $(this).html($(this).html().replace(/(Help The Persecuted\s+)/,'<span class="is-not-italic">Help The Persecuted</span> '));
       });
       
-      $('h1,h2,h3,h4,h5,h6,li,p').each(function() {
+      $('h1,h2,h3,h4,h5,h6,li,p:not(:has(img))').each(function() {
         $(this).html($(this).html().replace(/(\sHelp The Persecuted+)/,' <em>Help The Persecuted</em>'));
         $(this).html($(this).html().replace(/(Help The Persecuted\s+)/,'<em>Help The Persecuted</em> '));
         $(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
