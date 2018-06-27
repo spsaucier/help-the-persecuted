@@ -95,9 +95,10 @@
 
   h1.is-absolute {
     top: 11%;
-    font-size: 3em;
     text-align: center;
     width: 100%;
+    font-family: $heading_slab_font;
+    font-size: 2.3em;
   }
 }
 
@@ -121,12 +122,18 @@
     .circle {
       width: 48px;
       font-weight: bold;
-      margin: 30px auto 20px;
       height: 48px;
       border-radius: 100%;
       border: 1px solid;
       text-align: center;
       line-height: 44px;
+      background: $primary;
+      margin: 70px auto 10px;
+    }
+
+    h4 {
+      font-size: 3em;
+      margin: 0;
     }
 
     p {

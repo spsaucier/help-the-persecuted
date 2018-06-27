@@ -6,8 +6,15 @@
 
 @section('content')
   <section class="home-header fill-bg has-text-centered">
+    <div class="background-video">
+      <video loop muted autoplay poster="@asset('images/alley.jpg')" class="bg__video">
+        <source src="https://static.htp.org/site/20180626205415/htp-homepage.webm" type="video/webm">
+        <source src="https://static.htp.org/site/20180626205415/htp-homepage-web.mp4" type="video/mp4">
+        <source src="https://static.htp.org/site/20180626205415/htp_homepage.ogv" type="video/ogg">
+      </video>
+    </div>
     <h1 class="has-text-white">{{ the_field('header_text') }}</h1>
-    <a class="js-modal-video js-sr" data-video-id="{{ the_field('youtube_video_id') }}" href="#">
+    <a class="js-modal-video" data-video-id="{{ the_field('youtube_video_id') }}" href="#">
       <img width="60" src="@asset('images/play-icon-white.svg')">
     </a>
   </section>
