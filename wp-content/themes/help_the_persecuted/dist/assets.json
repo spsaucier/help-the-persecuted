@@ -2,6 +2,7 @@
   "fonts/bebasneue_bold-webfont.woff": "fonts/bebasneue_bold-webfont_f5747d07.woff",
   "fonts/bebasneue_bold-webfont.woff2": "fonts/bebasneue_bold-webfont_b57470c8.woff2",
   "images/about-us-box.jpg": "images/about-us-box_83159828.jpg",
+  "images/addressing_the_need.jpg": "images/addressing_the_need_1f6fca65.jpg",
   "images/advocate-icon.svg": "images/advocate-icon_51cb22f1.svg",
   "images/alley.jpg": "images/alley_596ec480.jpg",
   "images/blob-dark-green.svg": "images/blob-dark-green_25d3def0.svg",
@@ -65,7 +66,7 @@
   "vendor/fontawesome-webfont.ttf?v=4.7.0": "vendor/fontawesome-webfont_b06871f2.ttf",
   "vendor/fontawesome-webfont.woff2?v=4.7.0": "vendor/fontawesome-webfont_af7ae505.woff2",
   "vendor/fontawesome-webfont.woff?v=4.7.0": "vendor/fontawesome-webfont_fee66e71.woff",
-  "scripts/customizer.js": "scripts/customizer_4362e284.js",
-  "styles/main.css": "styles/main_4362e284.css",
-  "scripts/main.js": "scripts/main_4362e284.js"
+  "scripts/customizer.js": "scripts/customizer_873de78d.js",
+  "styles/main.css": "styles/main_873de78d.css",
+  "scripts/main.js": "scripts/main_873de78d.js"
 }

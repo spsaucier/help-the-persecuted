@@ -143,7 +143,7 @@
       </div>
     </div>
     <div class="columns">
-      <div class="column fill-bg img-refugees"></div>
+      <div class="column fill-bg img-addressing-the-need"></div>
       <div class="column center-children js-sr">
         <h5>{{ the_field('alternating_textimage_heading_3') }}</h5>
         <hr class="mini">
