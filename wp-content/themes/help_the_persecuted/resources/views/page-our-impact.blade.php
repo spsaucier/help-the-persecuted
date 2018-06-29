@@ -150,7 +150,7 @@
       <div class="ourimpact-content ourimpact-donate">
         <h1 class="js-sr">{{ the_field('call_to_donate_headline') }}</h1>
         <div class="js-sr">{{ the_field('call_to_donate_text') }}</div>
-        <p class="js-sr"><a href="/donate" target="_blank" class="button is-primary">Give Today</a></p>
+        <p class="js-sr"><a href="/donate" class="button is-primary">Give Today</a></p>
       </div>
     </section> 
   @endwhile

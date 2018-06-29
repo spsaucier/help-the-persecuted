@@ -114,7 +114,7 @@
       <div class="howwework-container">
         <h2 class="js-sr">{{ the_field('highlight_section_2_heading') }}</h2>
         <div class="js-sr">{{ the_field('highlight_section_2_text') }}</div>
-        <p class="js-sr"><a href="/donate" target="_blank" class="button is-primary">Give Today</a></p>
+        <p class="js-sr"><a href="/donate" class="button is-primary">Give Today</a></p>
       </div>
     </section>
   @endwhile

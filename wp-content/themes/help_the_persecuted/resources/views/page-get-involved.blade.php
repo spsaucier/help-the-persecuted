@@ -4,6 +4,12 @@
 
 @extends('layouts.app')
 
+@php
+  function format_text_for_mailto_param($text) {
+    return rawurlencode(htmlspecialchars_decode($text));
+  }
+@endphp
+
 @section('content')
   @while(have_posts()) @php(the_post())
     <section class="getinvolved has-text-centered">
@@ -18,7 +24,7 @@
               <p><img src="@asset('images/donate-icon.svg')" alt=""></p>
               <h3>Donate</h3>
               {{ the_field('donate_text') }}
-              <p><a href="/donate" target="_blank" class="button">Donate</a></p>
+              <p><a href="/donate" class="button">Donate</a></p>
             </div>
           </div>
           <div class="column is-one-quarter">
@@ -70,9 +76,20 @@
               <h3>Spread the Word</h3>
               {{ the_field('advocate_text') }}
               <div>
-                <p><a href="#" class="button" data-open-share="twitter" data-open-share-url="https://htp.org"><i class="fab fa-twitter"></i> Twitter</a></p>
-                <p><a href="#" class="button" data-open-share="facebook" data-open-share-link="https://htp.org"><i class="fab fa-facebook-f"></i> Facebook</a></p>
-                <p><a target="_blank" href="mailto:?subject=Help%20The%20Persecuted&body=Check%20out%20Help%20the%20Persecuted%20%28https%3A//htp.org%29%20-%20they%20help%20persecuted%20Christians%20around%20the%20world." class="button"><i class="fab fa-envelope"></i> Email</a></i></a></p>
+                <p><a class="button"
+                  href="https://twitter.com/intent/tweet/?text={{ format_text_for_mailto_param("Imagine facing torture and death for just five words—“I believe in Jesus Christ.” This is a reality for 215 million Christians today, and their burdens aren’t meant to be carried alone. Learn how you can #helpthepersecuted: @helppersecuted") }}&url={{ rawurlencode("https://helpthepersecuted.org") }}"
+                  target="_blank"
+                  aria-label="Share on Twitter"
+                  ><i class="fab fa-twitter"></i> Twitter</a></p>
+                <p><a class="button"
+                  href="https://facebook.com/sharer/sharer.php?u={{ rawurlencode("https://helpthepersecuted.org") }}"
+                  target="_blank"
+                  aria-label="Share on Facebook"
+                  ><i class="fab fa-facebook-f"></i> Facebook</a></p>
+                <p><a class="button"
+                 target="_self" aria-label="Share by E-Mail"
+                 href="mailto:?subject={{ format_text_for_mailto_param("Help The Persecuted") }}&body={{ format_text_for_mailto_param("I thought you might be interested in this. Persecution is a reality for more than 215 million Christians today—and this organization is providing for their practical and spiritual needs. Check it out. www.helpthepersecuted.org") }}"
+                 ><i class="fab fa-envelope"></i> Email</a></i></a></p>
               </div>
             </div>
           </div>
@@ -83,6 +100,5 @@
         <div class="js-sr">{{ the_field('other_ways_to_give_text') }}</div>
       </div>
     </section>
-    <script src='https://cdn.rawgit.com/OpenShare/openshare/master/dist/openshare.js'></script>
   @endwhile
 @endsection

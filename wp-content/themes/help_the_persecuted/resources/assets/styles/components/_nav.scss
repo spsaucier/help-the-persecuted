@@ -10,7 +10,7 @@ header.banner {
     a {
       position: relative;
       padding: 0.5rem 1.35rem;
-      color: $black;
+      color: $black !important;
       font-size: 15px;
 
       @media (max-width: 925px) {
@@ -46,7 +46,7 @@ header.banner {
       a {
         border-radius: 6px;
         background: $htp_red;
-        color: $white;
+        color: $white !important;
 
         @media (max-width: 768px) {
           display: none;

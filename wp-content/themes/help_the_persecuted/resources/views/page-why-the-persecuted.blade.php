@@ -72,7 +72,7 @@
       <div class="whythepersecuted-content">
         <h1 class="js-sr">{{ the_field('mosque_headline') }}</h1>
         <div class="js-sr">{{ the_field('mosque_text') }}</div>
-        <p class="js-sr"><a href="/donate" target="_blank" class="button is-primary">Give Today</a></p>
+        <p class="js-sr"><a href="/donate" class="button is-primary">Give Today</a></p>
       </div>
     </section>
   @endwhile
