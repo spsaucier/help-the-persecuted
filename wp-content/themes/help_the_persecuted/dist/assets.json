@@ -40,8 +40,8 @@
   "images/parachute-icon.svg": "images/parachute-icon_6868b905.svg",
   "images/pastoral-trauma-icon.svg": "images/pastoral-trauma-icon_d5843a31.svg",
   "images/placeholder.png": "images/placeholder_529cdf16.png",
-  "images/play-icon-white.svg": "images/play-icon-white_b54f1b15.svg",
-  "images/play-icon.svg": "images/play-icon_2bee9922.svg",
+  "images/play-icon-white.svg": "images/play-icon-white_21b254ce.svg",
+  "images/play-icon.svg": "images/play-icon_23e825ef.svg",
   "images/pray-box.jpg": "images/pray-box_5ff1216a.jpg",
   "images/pray-icon-brown.svg": "images/pray-icon-brown_b29c4d05.svg",
   "images/pray-icon.svg": "images/pray-icon_a0caaeda.svg",
@@ -66,7 +66,7 @@
   "vendor/fontawesome-webfont.ttf?v=4.7.0": "vendor/fontawesome-webfont_b06871f2.ttf",
   "vendor/fontawesome-webfont.woff2?v=4.7.0": "vendor/fontawesome-webfont_af7ae505.woff2",
   "vendor/fontawesome-webfont.woff?v=4.7.0": "vendor/fontawesome-webfont_fee66e71.woff",
-  "scripts/customizer.js": "scripts/customizer_873de78d.js",
-  "styles/main.css": "styles/main_873de78d.css",
-  "scripts/main.js": "scripts/main_873de78d.js"
+  "scripts/customizer.js": "scripts/customizer_6adb4c86.js",
+  "styles/main.css": "styles/main_6adb4c86.css",
+  "scripts/main.js": "scripts/main_6adb4c86.js"
 }

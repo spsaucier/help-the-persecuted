@@ -103,7 +103,9 @@
   margin-bottom: 40px;
 
   .fill-bg {
-    padding-bottom: 100%;
+    & > div {
+      padding-bottom: 100%;
+    }
   }
 
   .columns {

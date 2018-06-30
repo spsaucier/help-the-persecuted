@@ -114,7 +114,7 @@
           	setup_postdata( $post ); ?>
             <div class="columns">
               <div class="column">
-                <div class="fill-bg js-sr" style="background-image: url({!! has_post_thumbnail($post) ? wp_get_attachment_image_src( get_post_thumbnail_id( $post ), 'medium' )[0] : '/wp-content/themes/help_the_persecuted/resources/assets/images/placeholder.png' !!});"></div>
+                <div class="fill-bg js-sr" style="background-image: url({!! has_post_thumbnail($post) ? wp_get_attachment_image_src( get_post_thumbnail_id( $post ), 'medium' )[0] : '/wp-content/themes/help_the_persecuted/resources/assets/images/placeholder.png' !!});"><div></diV></div>
               </div>
               <div class="column">
                 <div class="inner">

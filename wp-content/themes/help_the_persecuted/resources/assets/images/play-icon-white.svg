@@ -1,22 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>C-Symbols/Play Copy</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <path d="M39.5,72.4166667 C21.320627,72.4166667 6.58333333,57.679373 6.58333333,39.5 C6.58333333,21.320627 21.320627,6.58333333 39.5,6.58333333 C57.679373,6.58333333 72.4166667,21.320627 72.4166667,39.5 C72.4166667,57.679373 57.679373,72.4166667 39.5,72.4166667 Z M39.5,67.5414204 C54.9868489,67.5414204 67.5414204,54.9868489 67.5414204,39.5 C67.5414204,24.0131511 54.9868489,11.4585796 39.5,11.4585796 C24.0131511,11.4585796 11.4585796,24.0131511 11.4585796,39.5 C11.4585796,54.9868489 24.0131511,67.5414204 39.5,67.5414204 Z M54.9537254,39.3617404 C56.0017521,40.0198786 56.0113364,41.0809127 54.9537254,41.7450696 L32.5480849,55.8153292 C32.0269324,56.1426017 31.6044548,55.9098358 31.6044548,55.2979608 L31.6044548,25.8088491 C31.6044548,25.1958419 32.0215976,24.9608581 32.5480849,25.2914808 L54.9537254,39.3617404 Z" id="path-1"></path>
-    </defs>
-    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home" transform="translate(-687.000000, -432.000000)">
-            <g id="C-Symbols/Play" transform="translate(681.000000, 426.000000)">
-                <mask id="mask-2" fill="white">
-                    <use xlink:href="#path-1"></use>
-                </mask>
-                <use id="Combined-Shape" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
-                <g id="C-Color/White" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
-                    <rect id="Rectangle" x="0" y="0" width="79" height="79"></rect>
-                </g>
-            </g>
-        </g>
+<svg id="C-Symbols_Play_Copy" data-name="C-Symbols/Play Copy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(0,0,0,0);
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Combined_Shape" data-name="Combined Shape" d="M25,50A25,25,0,1,1,50,25,25.028,25.028,0,0,1,25,50ZM25,3.7A21.3,21.3,0,1,0,46.3,25,21.32,21.32,0,0,0,25,3.7ZM19.383,37.5c-.234,0-.38-.193-.38-.5V14.6c0-.313.145-.508.378-.508a.651.651,0,0,1,.338.114L36.738,24.894a.984.984,0,0,1,0,1.811L19.719,37.39A.645.645,0,0,1,19.383,37.5Z" transform="translate(0 0)"/>
+    </clipPath>
+  </defs>
+  <rect id="C-Symbols_Play_Copy_background" data-name="C-Symbols/Play Copy background" class="cls-1" width="60" height="60"/>
+  <path id="Combined_Shape-2" data-name="Combined Shape" d="M25,50A25,25,0,1,1,50,25,25.028,25.028,0,0,1,25,50ZM25,3.7A21.3,21.3,0,1,0,46.3,25,21.32,21.32,0,0,0,25,3.7ZM19.383,37.5c-.234,0-.38-.193-.38-.5V14.6c0-.313.145-.508.378-.508a.651.651,0,0,1,.338.114L36.738,24.894a.984.984,0,0,1,0,1.811L19.719,37.39A.645.645,0,0,1,19.383,37.5Z" transform="translate(5 5)"/>
+  <g class="cls-2" transform="translate(5 5)">
+    <g id="C-Color_Black" data-name="C-Color/Black" transform="translate(-5 -5)">
+      <rect id="C-Color_Black_background" data-name="C-Color/Black background" class="cls-1" width="60" height="60"/>
+      <rect id="Rectangle" class="cls-3" width="60" height="60"/>
     </g>
+  </g>
 </svg>
