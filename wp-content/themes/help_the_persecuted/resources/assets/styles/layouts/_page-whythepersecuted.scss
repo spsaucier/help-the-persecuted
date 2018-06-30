@@ -20,7 +20,11 @@
     display: flex;
 
     .inner {
-      padding: 9%;
+      padding: 3vw;
+
+      @media (min-width: 1200px) {
+        padding: 40px;
+      }
 
       img {
         width: 65%;
@@ -117,6 +121,7 @@
 @media (min-width: 769px) {
   .alternating-image-text.alternate .columns > .column {
     padding: 10% 7%;
+    padding: 5vw 3.5vw;
   }
 }
 

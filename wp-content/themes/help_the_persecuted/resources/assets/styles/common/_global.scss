@@ -139,7 +139,7 @@ span,
       padding: 3.5vw;
 
       @media (max-width: 768px) {
-        &.fill-bg {
+        &.fill-bg > div {
           padding: 0 0 50%;
         }
       }

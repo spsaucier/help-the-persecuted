@@ -194,9 +194,13 @@
   }
 
   .column {
-    padding: calc(10px + 3%);
+    padding: calc(10px + 1vw);
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+      padding: 1.5em;
+    }
 
     &:nth-child(1) {
       background-color: $htp_brown;

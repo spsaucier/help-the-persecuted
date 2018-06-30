@@ -59,7 +59,7 @@
     @endif
     <section class="alternating-image-text alternate">
       <div class="columns">
-        <div class="column fill-bg img-mankid"></div>
+        <div class="column fill-bg img-mankid"><div></div></div>
         <div class="column center-children js-sr">
           <h5>{{ the_field('red_box_headline') }}</h5>
           <hr class="mini">
