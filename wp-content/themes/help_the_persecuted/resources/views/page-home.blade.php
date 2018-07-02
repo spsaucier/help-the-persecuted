@@ -129,43 +129,35 @@
     <div class="columns">
       <div class="column fill-bg img-desertpeople"><div></div></div>
       <div class="column center-children is-text-dark js-sr">
-        <div>
-          <h5>{{ the_field('alternating_textimage_heading_1') }}</h5>
-          <hr class="mini">
-          {{ the_field('alternating_textimage_text_1') }}
-          <p><a href="/why-the-persecuted" class="arrow-link">Why The Persecuted?</a></p>
-        </div>
+        <h5>{{ the_field('alternating_textimage_heading_1') }}</h5>
+        <hr class="mini">
+        {{ the_field('alternating_textimage_text_1') }}
+        <p><a href="/why-the-persecuted" class="arrow-link">Why The Persecuted?</a></p>
       </div>
     </div>
     <div class="columns">
       <div class="column fill-bg img-womanchild"><div></div></div>
       <div class="column center-children has-text-centered js-sr">
-        <div>
-          <h5>{{ the_field('alternating_textimage_heading_2') }}</h5>
-          <p><a href="{{ the_field('alternating_textimage_link_url_2') }}" class="arrow-link">{{ the_field('alternating_textimage_link_text_2') }}</a></p>
-        </div>
+        <h5>{{ the_field('alternating_textimage_heading_2') }}</h5>
+        <p><a href="{{ the_field('alternating_textimage_link_url_2') }}" class="arrow-link">{{ the_field('alternating_textimage_link_text_2') }}</a></p>
       </div>
     </div>
     <div class="columns">
       <div class="column fill-bg img-addressing-the-need"><div></div></div>
       <div class="column center-children js-sr">
-        <div>
-          <h5>{{ the_field('alternating_textimage_heading_3') }}</h5>
-          <hr class="mini">
-          {{ the_field('alternating_textimage_text_3') }}
-          <p><a href="/how-we-work" class="arrow-link">How We Work</a></p>
-        </div>
+        <h5>{{ the_field('alternating_textimage_heading_3') }}</h5>
+        <hr class="mini">
+        {{ the_field('alternating_textimage_text_3') }}
+        <p><a href="/how-we-work" class="arrow-link">How We Work</a></p>
       </div>
     </div>
     <div class="columns">
       <div class="column fill-bg img-kids"><div></div></div>
       <div class="column center-children js-sr">
-        <div>
-          <h5>{{ the_field('alternating_textimage_heading_4') }}</h5>
-          <hr class="mini">
-          {{ the_field('alternating_textimage_text_4') }}
-          <p><a href="/our-impact" class="arrow-link">Our Impact</a></p>
-        </div>
+        <h5>{{ the_field('alternating_textimage_heading_4') }}</h5>
+        <hr class="mini">
+        {{ the_field('alternating_textimage_text_4') }}
+        <p><a href="/our-impact" class="arrow-link">Our Impact</a></p>
       </div>
     </div>
   </section>
