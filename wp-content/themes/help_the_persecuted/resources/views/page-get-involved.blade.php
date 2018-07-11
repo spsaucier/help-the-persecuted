@@ -77,18 +77,18 @@
               {{ the_field('advocate_text') }}
               <div>
                 <p><a class="button"
-                  href="https://twitter.com/intent/tweet/?text={{ format_text_for_mailto_param("Imagine facing torture and death for just five words—“I believe in Jesus Christ.” This is a reality for 215 million Christians today, and their burdens aren’t meant to be carried alone. Learn how you can #helpthepersecuted: @helppersecuted") }}&url={{ rawurlencode("https://helpthepersecuted.org") }}"
+                  href="https://twitter.com/intent/tweet/?text={{ format_text_for_mailto_param("Imagine facing torture and death for just five words—“I believe in Jesus Christ.” This is a reality for 215 million Christians today, and their burdens aren’t meant to be carried alone. Learn how you can #helpthepersecuted: @helppersecuted") }}&url={{ rawurlencode("https://htp.org") }}"
                   target="_blank"
                   aria-label="Share on Twitter"
                   ><i class="fab fa-twitter"></i> Twitter</a></p>
                 <p><a class="button"
-                  href="https://facebook.com/sharer/sharer.php?u={{ rawurlencode("https://helpthepersecuted.org") }}"
+                  href="https://facebook.com/sharer/sharer.php?u={{ rawurlencode("https://htp.org") }}"
                   target="_blank"
                   aria-label="Share on Facebook"
                   ><i class="fab fa-facebook-f"></i> Facebook</a></p>
                 <p><a class="button"
                  target="_self" aria-label="Share by E-Mail"
-                 href="mailto:?subject={{ format_text_for_mailto_param("Help The Persecuted") }}&body={{ format_text_for_mailto_param("I thought you might be interested in this. Persecution is a reality for more than 215 million Christians today—and this organization is providing for their practical and spiritual needs. Check it out. www.helpthepersecuted.org") }}"
+                 href="mailto:?subject={{ format_text_for_mailto_param("Help The Persecuted") }}&body={{ format_text_for_mailto_param("I thought you might be interested in this. Persecution is a reality for more than 215 million Christians today—and this organization is providing for their practical and spiritual needs. Check it out. www.htp.org") }}"
                  ><i class="fab fa-envelope"></i> Email</a></i></a></p>
               </div>
             </div>
