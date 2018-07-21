@@ -41,7 +41,7 @@
               <h3>Stay Connected</h3>
               {{ the_field('stay_informed_text') }}
           		@php
-          		  echo do_shortcode('[contact-form-7 id="42" title="Contact form"]');
+          		  echo do_shortcode('[contact-form-7 id="235" title="Subscribe Form"]');
         		  @endphp
             </div>
           </div>

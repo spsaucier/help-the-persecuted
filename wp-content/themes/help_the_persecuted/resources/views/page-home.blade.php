@@ -60,7 +60,7 @@
     	</div>
     	<div class="column is-narrow js-sr-set-2">
     		@php
-    		  echo do_shortcode('[contact-form-7 id="42" title="Contact form"]');
+    		  echo do_shortcode('[contact-form-7 id="235" title="Subscribe Form"]');
   		  @endphp
     	</div>
     </div>

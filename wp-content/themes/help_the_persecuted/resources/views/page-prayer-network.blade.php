@@ -17,7 +17,7 @@
             <img src="@asset('images/pray-icon-brown.svg')" alt="">
             <h5>Join Our <br>Prayer Team</h5>
         		@php
-        		  echo do_shortcode('[contact-form-7 id="165" title="Prayer List Form"]');
+        		  echo do_shortcode('[contact-form-7 id="236" title="Prayer List Form"]');
       		  @endphp
       		</div>
         </div>
