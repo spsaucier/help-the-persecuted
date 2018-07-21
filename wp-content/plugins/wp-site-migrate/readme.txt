@@ -79,6 +79,12 @@ That's easy! [Signup here](http://wpengine.com/plans/).
 
 == Changelog ==
 
+= 1.69 =
+* Adding support for chunked base64 encoding
+
+= 1.68 =
+* Updating upload rows
+
 = 1.66 =
 * Updating TOS and privacy policies
 

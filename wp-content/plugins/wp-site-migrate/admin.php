@@ -116,6 +116,7 @@ class WPEAdmin {
 		$tags = "<input type='hidden' name='url' value='".$this->bvmain->info->wpurl()."'/>\n".
 				"<input type='hidden' name='homeurl' value='".$this->bvmain->info->homeurl()."'/>\n".
 				"<input type='hidden' name='siteurl' value='".$this->bvmain->info->siteurl()."'/>\n".
+				"<input type='hidden' name='dbsig' value='".$this->bvmain->lib->dbsig(false)."'/>\n".
 				"<input type='hidden' name='plug' value='".$this->bvmain->plugname."'/>\n".
 				"<input type='hidden' name='adminurl' value='".$this->mainUrl()."'/>\n".
 				"<input type='hidden' name='bvversion' value='".$this->bvmain->version."'/>\n".

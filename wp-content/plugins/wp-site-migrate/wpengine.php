@@ -5,7 +5,7 @@ Plugin URI: https://wpengine.com
 Description: The easiest way to migrate your site to WP Engine
 Author: WPEngine
 Author URI: https://wpengine.com
-Version: 1.66
+Version: 1.69
 Network: True
  */
 
@@ -72,7 +72,7 @@ if ((array_key_exists('bvplugname', $_REQUEST)) &&
 				$bvcb->execute();
 			}
 		} else {
-			$bvcb->terminate(false);
+			$bvcb->terminate(false, array_key_exists('bvdbg', $_REQUEST));
 		}
 	}
 } else {
